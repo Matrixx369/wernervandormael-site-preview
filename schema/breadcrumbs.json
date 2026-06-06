@@ -1,0 +1,200 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Algemene dakwerken in Limburg",
+        "item": "https://wernervandormael.be/dakwerken/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Hellende daken in Limburg",
+        "item": "https://wernervandormael.be/hellende-daken/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Platte daken in Limburg",
+        "item": "https://wernervandormael.be/platte-daken/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dakisolatie in Limburg",
+        "item": "https://wernervandormael.be/dakisolatie/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dakherstellingen in Limburg",
+        "item": "https://wernervandormael.be/dakherstellingen/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Zink-, koper- en loodwerken in Limburg",
+        "item": "https://wernervandormael.be/zinkwerken-koperwerken-loodwerken/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Kleinere dakwerken en klussen in Limburg",
+        "item": "https://wernervandormael.be/kleinere-dakwerken/limburg/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Een selectie van dakwerken en uitgevoerde projecten",
+        "item": "https://wernervandormael.be/projecten/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Over Vandormael Werner",
+        "item": "https://wernervandormael.be/over-vandormael-werner/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact opnemen",
+        "item": "https://wernervandormael.be/contact/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacybeleid",
+        "item": "https://wernervandormael.be/privacybeleid/"
+      }
+    ]
+  }
+]

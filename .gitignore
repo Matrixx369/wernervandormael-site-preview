@@ -1,0 +1,11 @@
+node_modules/
+_site/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local reference/source package files that are not part of the review preview.
+index-final-mockup.html
+werner prompt.txt
+werner codex plan.txt
+assets/images/*.jpg

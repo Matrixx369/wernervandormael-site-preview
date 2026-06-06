@@ -1,0 +1,51 @@
+{
+  "name": "Vandormael Werner",
+  "type": "RoofingContractor",
+  "address": {
+    "street": "Plattestraat 33",
+    "postalCode": "3830",
+    "locality": "Wellen",
+    "country": "BE"
+  },
+  "phone": "+32495548415",
+  "phoneDisplay": "0495 54 84 15",
+  "email": "werner.vandormael1@gmail.com",
+  "website": "https://wernervandormael.be/",
+  "area": ["Limburg", "Wellen"],
+  "services": [
+    "Algemene dakwerken",
+    "Hellende daken",
+    "Platte daken",
+    "Dakisolatie",
+    "Dakherstellingen",
+    "Zink-, koper- en loodwerken",
+    "Kleinere dakwerken"
+  ],
+  "pages": [
+    "/",
+    "/dakwerken/limburg/",
+    "/hellende-daken/limburg/",
+    "/platte-daken/limburg/",
+    "/dakisolatie/limburg/",
+    "/dakherstellingen/limburg/",
+    "/zinkwerken-koperwerken-loodwerken/limburg/",
+    "/kleinere-dakwerken/limburg/",
+    "/projecten/",
+    "/over-vandormael-werner/",
+    "/contact/",
+    "/privacybeleid/"
+  ],
+  "images": [
+    "dakwerker-limburg-bedrijfswagen-dakwerken.jpg",
+    "hellend-dak-vandormael-werner-limburg.jpg",
+    "plat-dak-roofing-epdm-vandormael-werner.jpg",
+    "dakisolatie-hellend-dak-limburg.jpg",
+    "dakherstelling-regio-limburg.jpg",
+    "zinkwerken-dakgoot-limburg.jpg",
+    "kleinere-dakwerken-klussen-vandormael-werner.jpg",
+    "werner-vandormael-dakwerker-limburg.jpg"
+  ],
+  "schemaTypes": ["RoofingContractor", "Service", "FAQPage", "BreadcrumbList", "ContactPoint"],
+  "seoFocusKeywords": ["dakwerken Limburg", "dakwerker Limburg", "algemene dakwerken Limburg", "dakherstellingen Limburg", "dakisolatie Limburg", "hellende daken Limburg", "platte daken Limburg", "zinkwerken Limburg"],
+  "contentApprovalRule": "Meaningful copy changes require user approval and must first be listed in proposed-content-improvements.md."
+}

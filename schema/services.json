@@ -1,0 +1,79 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Algemene dakwerken",
+    "url": "https://wernervandormael.be/dakwerken/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Hellende daken",
+    "url": "https://wernervandormael.be/hellende-daken/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Platte daken",
+    "url": "https://wernervandormael.be/platte-daken/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Dakisolatie",
+    "url": "https://wernervandormael.be/dakisolatie/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Dakherstellingen",
+    "url": "https://wernervandormael.be/dakherstellingen/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Zink-, koper- en loodwerken",
+    "url": "https://wernervandormael.be/zinkwerken-koperwerken-loodwerken/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kleinere dakwerken",
+    "url": "https://wernervandormael.be/kleinere-dakwerken/limburg/",
+    "provider": {
+      "@type": "RoofingContractor",
+      "name": "Vandormael Werner"
+    },
+    "areaServed": "Limburg"
+  }
+]

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="155" viewBox="0 0 390 155">
+  <rect width="390" height="155" fill="#fff"/>
+  <path d="M45 58 L90 30 L126 49 L164 20 L206 49 L243 30 L338 60" fill="none" stroke="#b01822" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M58 75 H328" stroke="#111" stroke-width="3"/>
+  <text x="195" y="101" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" text-anchor="middle" fill="#111">DAKWERKEN EN KLUSSEN</text>
+  <text x="195" y="130" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="900" text-anchor="middle" fill="#111">Vandormael Werner</text>
+</svg>

@@ -32,6 +32,7 @@ for (const url of pages) {
   const html = fs.readFileSync(file, "utf8");
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
   if (/\/projecten\/|Bekijk projecten|Projectbeelden/.test(html)) errors.push(`${url}: projects page or section reference remains`);
+  if (!html.includes('href="https://wa.me/32495548415"')) errors.push(`${url}: missing WhatsApp contact link`);
   if (servicePages.has(url)) {
     const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
     if (faqCount < 4 || faqCount > 6) errors.push(`${url}: expected 4-6 visible FAQs, found ${faqCount}`);

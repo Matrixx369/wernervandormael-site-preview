@@ -4,9 +4,30 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const output = path.join(root, "_site");
 const repoName = process.env.PAGES_REPOSITORY_NAME;
+const servicePages = [
+  "dakwerken/limburg/index.html",
+  "hellende-daken/limburg/index.html",
+  "platte-daken/limburg/index.html",
+  "dakisolatie/limburg/index.html",
+  "dakherstellingen/limburg/index.html",
+  "zinkwerken-koperwerken-loodwerken/limburg/index.html",
+  "kleinere-dakwerken/limburg/index.html",
+];
 
 if (!repoName) {
   throw new Error("PAGES_REPOSITORY_NAME is required.");
+}
+
+for (const servicePage of servicePages) {
+  const source = path.join(root, servicePage);
+  if (!fs.existsSync(source)) {
+    throw new Error(`Missing generated service page: ${servicePage}`);
+  }
+  const html = fs.readFileSync(source, "utf8");
+  const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
+  if (html.includes("Wanneer kan u contact opnemen?") || faqCount < 4 || faqCount > 6) {
+    throw new Error(`Stale service page content detected: ${servicePage}`);
+  }
 }
 
 const files = [

@@ -24,6 +24,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate and validate website pages
+        run: |
+          node build-site.js
+          node validate-site.js
+
       - name: Build noindex review preview
         env:
           PAGES_REPOSITORY_NAME: ${{ github.event.repository.name }}

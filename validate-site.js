@@ -32,7 +32,8 @@ for (const url of pages) {
   const html = fs.readFileSync(file, "utf8");
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
   if (/\/projecten\/|Bekijk projecten|Projectbeelden/.test(html)) errors.push(`${url}: projects page or section reference remains`);
-  if (!html.includes('href="https://wa.me/32495548415"')) errors.push(`${url}: missing WhatsApp contact link`);
+  if (!html.includes('href="https://wa.me/32495548415?text=Dag%20Werner%2C%20ik%20heb%20een%20vraag%20over%20dakwerken."')) errors.push(`${url}: missing WhatsApp contact link`);
+  if (!/<div class="menu" id="main-menu"><a href="(?:\.\/|\.\.\/)+">Dakwerken<\/a>/.test(html)) errors.push(`${url}: Dakwerken navigation does not target homepage root`);
   if (servicePages.has(url)) {
     const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
     if (faqCount < 4 || faqCount > 6) errors.push(`${url}: expected 4-6 visible FAQs, found ${faqCount}`);
@@ -65,6 +66,17 @@ for (const url of pages) {
     const resolved = path.resolve(path.dirname(file), asset[1]);
     if (!fs.existsSync(resolved)) errors.push(`${url}: missing asset ${asset[1]}`);
   }
+}
+
+const homeHtml = fs.readFileSync(fileFor("/"), "utf8");
+if (homeHtml.includes('class="extra-service-card"')) errors.push("/: smaller works still uses a service card");
+if (!homeHtml.includes('class="container split smaller-works"')) errors.push("/: missing mockup-style smaller works section");
+if (!homeHtml.includes("WhatsApp Werner")) errors.push("/: missing homepage WhatsApp CTA");
+
+const contactHtml = fs.readFileSync(fileFor("/contact/"), "utf8");
+const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-address", "contact-form"].map(marker => contactHtml.indexOf(marker));
+if (contactOrder.some(position => position < 0) || contactOrder.some((position, index) => index && position < contactOrder[index - 1])) {
+  errors.push("/contact/: contact sections are missing or out of order");
 }
 
 const allHtml = pages.map(url => fs.readFileSync(fileFor(url), "utf8")).join("\n").toLowerCase();

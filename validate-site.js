@@ -12,6 +12,7 @@ const pages = [
 const errors = [];
 const titles = new Set();
 const descriptions = new Set();
+const pageFiles = new Set(pages.map(url => path.resolve(fileFor(url))));
 
 function fileFor(url) {
   return path.join(root, url === "/" ? "index.html" : url, url === "/" ? "" : "index.html");
@@ -24,6 +25,7 @@ for (const url of pages) {
     continue;
   }
   const html = fs.readFileSync(file, "utf8");
+  if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
   const h1s = html.match(/<h1\b/g) || [];
   if (h1s.length !== 1) errors.push(`${url}: expected 1 H1, found ${h1s.length}`);
 
@@ -38,11 +40,13 @@ for (const url of pages) {
     if (!html.includes(required)) errors.push(`${url}: missing ${required}`);
   }
 
-  for (const href of html.matchAll(/href="(\/[^"#?]*)"/g)) {
+  for (const href of html.matchAll(/href="([^"]+)"/g)) {
     const target = href[1];
-    if (!pages.includes(target)) {
-      errors.push(`${url}: internal link does not target a public page: ${target}`);
-    }
+    if (/^(?:https?:|mailto:|tel:|#)/.test(target) || target.includes("assets/") || target.endsWith("site.webmanifest")) continue;
+    const cleanTarget = target.split(/[?#]/)[0];
+    const resolved = path.resolve(path.dirname(file), cleanTarget);
+    const targetFile = cleanTarget.endsWith("/") || !path.extname(cleanTarget) ? path.join(resolved, "index.html") : resolved;
+    if (!pageFiles.has(targetFile)) errors.push(`${url}: internal link does not target a public page: ${target}`);
   }
 
   for (const asset of html.matchAll(/(?:href|src|srcset)="((?:\.\.\/)*assets\/[^"]+|(?:\.\.\/)*site\.webmanifest)"/g)) {

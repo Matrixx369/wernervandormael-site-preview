@@ -43,7 +43,6 @@ for (const file of walk(output).filter(file => file.endsWith(".html"))) {
     '<meta name="robots" content="index,follow">',
     '<meta name="robots" content="noindex,nofollow">'
   );
-  html = html.replaceAll('href="/', `href="/${repoName}/`);
   fs.writeFileSync(file, html);
 }
 

@@ -71,8 +71,9 @@ redirects at the hosting level:
 
 The `preview/wernervandormael-site` branch includes a Pages workflow. It builds a
 separate `_site` artifact, changes robots directives to `noindex,nofollow`, blocks
-preview crawling in `robots.txt`, and rewrites root links for the GitHub project
-subpath. Production source files remain unchanged.
+preview crawling in `robots.txt`, and preserves the source's page-relative links so
+navigation works from the GitHub project subpath. Production source files remain
+unchanged.
 
 In the GitHub repository, open **Settings → Pages → Build and deployment** and set
 **Source** to **GitHub Actions**. Push the preview branch or manually run the

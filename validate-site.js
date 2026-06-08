@@ -6,7 +6,7 @@ const pages = [
   "/", "/dakwerken/limburg/", "/hellende-daken/limburg/", "/platte-daken/limburg/",
   "/dakisolatie/limburg/", "/dakherstellingen/limburg/",
   "/zinkwerken-koperwerken-loodwerken/limburg/", "/kleinere-dakwerken/limburg/",
-  "/projecten/", "/over-vandormael-werner/", "/contact/", "/privacybeleid/",
+  "/over-vandormael-werner/", "/contact/", "/privacybeleid/",
   "/algemene-voorwaarden/",
 ];
 const errors = [];
@@ -14,6 +14,10 @@ const titles = new Set();
 const descriptions = new Set();
 const pageFiles = new Set(pages.map(url => path.resolve(fileFor(url))));
 const servicePages = new Set(pages.slice(1, 8));
+
+if (fs.existsSync(fileFor("/projecten/"))) {
+  errors.push("Removed page still exists: /projecten/");
+}
 
 function fileFor(url) {
   return path.join(root, url === "/" ? "index.html" : url, url === "/" ? "" : "index.html");
@@ -27,6 +31,7 @@ for (const url of pages) {
   }
   const html = fs.readFileSync(file, "utf8");
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
+  if (/\/projecten\/|Bekijk projecten|Projectbeelden/.test(html)) errors.push(`${url}: projects page or section reference remains`);
   if (servicePages.has(url)) {
     const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
     if (faqCount < 4 || faqCount > 6) errors.push(`${url}: expected 4-6 visible FAQs, found ${faqCount}`);

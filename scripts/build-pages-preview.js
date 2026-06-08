@@ -46,7 +46,6 @@ const files = [
   "over-vandormael-werner",
   "platte-daken",
   "privacybeleid",
-  "projecten",
   "schema",
   "zinkwerken-koperwerken-loodwerken",
 ];

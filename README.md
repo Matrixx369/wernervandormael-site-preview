@@ -21,11 +21,14 @@ Production-ready static website for `https://wernervandormael.be`.
 - `/dakherstellingen/limburg/`
 - `/zinkwerken-koperwerken-loodwerken/limburg/`
 - `/kleinere-dakwerken/limburg/`
-- `/projecten/`
 - `/over-vandormael-werner/`
 - `/contact/`
 - `/privacybeleid/`
 - `/algemene-voorwaarden/`
+
+The site currently generates 12 public pages. The Projecten page and homepage
+project section are postponed. Existing images remain available for possible
+later project or gallery use.
 
 ## Build and images
 

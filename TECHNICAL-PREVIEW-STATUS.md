@@ -26,11 +26,14 @@ design is not approved. Visual redesign is postponed to a separate later round.
 - `/dakherstellingen/limburg/`
 - `/zinkwerken-koperwerken-loodwerken/limburg/`
 - `/kleinere-dakwerken/limburg/`
-- `/projecten/`
 - `/over-vandormael-werner/`
 - `/contact/`
 - `/privacybeleid/`
 - `/algemene-voorwaarden/`
+
+The site currently generates 12 public pages. The Projecten page and homepage
+project section are postponed. Existing images remain preserved for possible
+later project or gallery use.
 
 ## Preserved Technical Assets
 
@@ -53,8 +56,9 @@ design is not approved. Visual redesign is postponed to a separate later round.
 
 - The visual design is not approved and does not yet match the approved mockup
   closely enough.
-- Header, hero, typography, spacing, cards, project presentation and footer
+- Header, hero, typography, spacing, cards and footer
   require a separate visual regression and design round.
+- The Projecten page and homepage project section are postponed.
 - The contact forms use a `mailto:` fallback rather than a verified form
   delivery backend.
 - Production hosting redirects for non-`/limburg/` legacy service URLs still

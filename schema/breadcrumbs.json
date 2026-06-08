@@ -138,24 +138,6 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Een selectie van dakwerken en uitgevoerde projecten",
-        "item": "https://wernervandormael.be/projecten/"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://wernervandormael.be/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
         "name": "Over Vandormael Werner",
         "item": "https://wernervandormael.be/over-vandormael-werner/"
       }

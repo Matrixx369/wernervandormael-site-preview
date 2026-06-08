@@ -78,6 +78,19 @@ const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-
 if (contactOrder.some(position => position < 0) || contactOrder.some((position, index) => index && position < contactOrder[index - 1])) {
   errors.push("/contact/: contact sections are missing or out of order");
 }
+const contactOptionsOrder = ["Bel Werner", "WhatsApp Werner", "Stuur een e-mail"].map(marker => contactHtml.indexOf(marker));
+if (contactOptionsOrder.some(position => position < 0) || contactOptionsOrder.some((position, index) => index && position < contactOptionsOrder[index - 1])) {
+  errors.push("/contact/: contact options are missing or out of order");
+}
+if (contactHtml.includes("Dakwerken Limburg</span><h1>Contact opnemen met Werner")) errors.push("/contact/: old top label remains");
+if (contactHtml.includes("Foto's doorsturen is mogelijk")) errors.push("/contact/: old photo checklist item remains");
+if (!contactHtml.includes("U kan via WhatsApp of e-mail ook enkele foto's meesturen")) errors.push("/contact/: missing photo helper text");
+if (!contactHtml.includes("werner-vandormael-dakwerker-limburg")) errors.push("/contact/: missing Werner trust image");
+if (!contactHtml.includes('alt="Werner Vandormael aan het werk als dakwerker in Limburg"')) errors.push("/contact/: Werner image alt text is missing");
+if (contactHtml.includes("Voorkeur contact")) errors.push("/contact/: preference contact field remains");
+const mainJs = fs.readFileSync(path.join(root, "assets", "js", "main.js"), "utf8");
+if (!mainJs.includes("messageFromForm") || !mainJs.includes("contact-whatsapp-submit")) errors.push("/contact/: form email/WhatsApp behavior is missing");
+if (mainJs.includes("Voorkeur contact")) errors.push("/contact/: JavaScript still expects preference contact");
 
 const allHtml = pages.map(url => fs.readFileSync(fileFor(url), "utf8")).join("\n").toLowerCase();
 for (const claim of ["beste dakwerker", "24/7", "30 jaar ervaring", "erkend specialist", "aggregateRating", "openingHours"]) {

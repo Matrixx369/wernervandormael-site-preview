@@ -13,6 +13,7 @@ const errors = [];
 const titles = new Set();
 const descriptions = new Set();
 const pageFiles = new Set(pages.map(url => path.resolve(fileFor(url))));
+const servicePages = new Set(pages.slice(1, 8));
 
 function fileFor(url) {
   return path.join(root, url === "/" ? "index.html" : url, url === "/" ? "" : "index.html");
@@ -26,6 +27,11 @@ for (const url of pages) {
   }
   const html = fs.readFileSync(file, "utf8");
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
+  if (servicePages.has(url)) {
+    const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
+    if (faqCount < 4 || faqCount > 6) errors.push(`${url}: expected 4-6 visible FAQs, found ${faqCount}`);
+    if (html.includes("Wanneer kan u contact opnemen?")) errors.push(`${url}: still uses the generic service-list heading`);
+  }
   const h1s = html.match(/<h1\b/g) || [];
   if (h1s.length !== 1) errors.push(`${url}: expected 1 H1, found ${h1s.length}`);
 

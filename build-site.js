@@ -33,53 +33,88 @@ const pages = [
     title: "Dakwerken Limburg | Algemene dakwerken | Vandormael Werner",
     description: "Algemene dakwerken in Limburg door Vandormael Werner uit Wellen. Voor hellende daken, platte daken, dakisolatie, dakherstellingen en dakafwerking.",
     h1: "Algemene dakwerken in Limburg",
-    intro: "Vandormael Werner voert algemene dakwerken uit in de ruime regio Limburg, met Wellen als uitvalsbasis. U kan terecht voor dakwerken aan hellende en platte daken, herstellingen, isolatie en dakafwerking.",
+    intro: "Voor algemene dakwerken in Limburg kan u terecht bij Vandormael Werner uit Wellen. Het kan gaan om een herstelling, een renovatie, isolatie of dakafwerking. Eerst wordt bekeken wat er precies nodig is, daarna wordt de meest logische aanpak besproken.",
     image: "dakwerker-limburg-bedrijfswagen-dakwerken.jpg",
     alt: "Vandormael Werner bedrijfswagen bij uitgevoerd dakwerk in Limburg",
-    practical: "Algemene dakwerken kunnen bestaan uit renovatie, herstelling, isolatie en een correcte afwerking van het dak. Eerst wordt bekeken wat de situatie vraagt en welke werken passend zijn.",
-    examples: ["Werken aan hellende en platte daken", "Dakisolatie als onderdeel van een renovatie", "Herstellingen en onderhoud", "Dakafwerking en aansluitingen"],
+    listHeading: "Voor welke dakwerken kan u contact opnemen?",
+    practical: "Vandormael Werner voert dakwerken uit in de ruime regio Limburg, met Wellen als uitvalsbasis. Zowel voor een afgebakende herstelling als voor verschillende werken die samen horen, kan u de situatie eerst bespreken.",
+    examples: ["Werken aan hellende daken", "Werken aan platte daken", "Dakisolatie bij renovatie", "Dakherstellingen", "Zink-, koper- en loodwerken", "Kleinere dakwerken en afwerking"],
+    attentionHeading: "Waar wordt op gelet bij algemene dakwerken?",
+    attention: "Een dak bestaat uit meer dan alleen de zichtbare bedekking. Werner bekijkt ook de aansluitingen, randen, goten en mogelijke sporen van vocht. Zo wordt duidelijk of een gerichte herstelling volstaat of dat meerdere onderdelen samen aangepakt moeten worden.",
     related: [1, 2, 3, 4],
+    faq: [
+      ["Welke dakwerken voert Vandormael Werner uit?", "U kan contact opnemen voor werken aan hellende en platte daken, dakisolatie, dakherstellingen en afwerking in zink, koper en lood. Ook kleinere dakwerken kunnen besproken worden."],
+      ["Werkt Vandormael Werner in heel Limburg?", "Werner werkt vanuit Wellen en voert dakwerken uit in de ruime regio Limburg. Of een werk praktisch ingepland kan worden, hangt ook af van de locatie en de omvang van het werk."],
+      ["Kan ik ook contact opnemen voor kleinere dakwerken?", "Ja. Een kleine herstelling, een probleem aan een goot of een beperkte afwerking kan eerst met Werner besproken worden."],
+      ["Kan ik foto's doorsturen voor een eerste inschatting?", "Ja, foto's helpen om een eerste beeld van het dak en het probleem te krijgen. Zorg indien mogelijk voor enkele overzichtsfoto's en duidelijke beelden van de schade."],
+      ["Wordt er altijd een plaatsbezoek ingepland?", "Niet altijd meteen. Soms geven foto's en een korte uitleg al voldoende informatie voor een eerste bespreking. Wanneer de situatie ter plaatse bekeken moet worden, wordt een plaatsbezoek afgesproken."],
+    ],
   },
   {
     url: "/hellende-daken/limburg/",
     title: "Hellende daken Limburg | Vandormael Werner dakwerken",
     description: "Hellende daken laten plaatsen, vernieuwen of herstellen in Limburg. Vandormael Werner werkt vanuit Wellen en voert dakwerken uit in de ruime regio.",
     h1: "Hellende daken in Limburg",
-    intro: "Voor werken aan hellende daken in Limburg kan u terecht bij Vandormael Werner. De focus ligt op een correcte uitvoering, goede aansluiting en duurzame dakafwerking.",
+    intro: "Een hellend dak krijgt veel te verduren door regen, wind en ouderdom. Soms volstaat een gerichte herstelling, soms is een grotere aanpak nodig. Werner bekijkt eerst wat er aan de hand is en bespreekt daarna welke oplossing het meest logisch is.",
     image: "hellend-dak-vandormael-werner-limburg.jpg",
     alt: "Hellend dak uitgevoerd door Vandormael Werner in Limburg",
-    practical: "Bij een hellend dak zijn de staat van de dakpannen, aansluitingen en waterdichtheid belangrijke aandachtspunten. Ook bij een dakrenovatie wordt bekeken welke ingrepen nodig zijn.",
-    examples: ["Dakpannen vernieuwen of herstellen", "Dakrenovatie", "Aansluitingen en dakafwerking", "Problemen met de waterdichtheid"],
+    listHeading: "Voor welke werken aan hellende daken kan u terecht?",
+    practical: "Bij werken aan een hellend dak kan het gaan om losse of beschadigde dakpannen, een probleem aan een nok of aansluiting, of een grotere dakrenovatie. Ook een combinatie met dakisolatie kan bekeken worden wanneer dat past bij de bestaande dakopbouw.",
+    examples: ["Beschadigde of verschoven dakpannen", "Herstellingen aan hellende daken", "Vernieuwing of renovatie van dakdelen", "Controle van aansluitingen en afwerking", "Combinatie met dakisolatie", "Problemen na wind of regen"],
+    attentionHeading: "Waar wordt op gelet bij een hellend dak?",
+    attention: "De waterdichtheid blijft het belangrijkste aandachtspunt. Daarom wordt gekeken naar de staat van de dakbedekking, zichtbare schade en de afwerking rond nokken, randen, goten en andere aansluitingen. Ook vochtplekken binnen kunnen helpen om het probleem beter te vinden.",
     related: [0, 3, 4],
+    faq: [
+      ["Wanneer moet een hellend dak hersteld worden?", "Losse dakpannen, zichtbare schade, vochtplekken of waterinsijpeling zijn redenen om het dak te laten bekijken. Wacht best niet tot een klein probleem meer schade veroorzaakt."],
+      ["Moet een hellend dak altijd volledig vernieuwd worden?", "Nee. Wanneer de schade plaatselijk is en de rest van het dak nog in goede staat is, kan een gerichte herstelling volstaan. Werner bekijkt eerst wat technisch en praktisch logisch is."],
+      ["Kan dakisolatie gecombineerd worden met werken aan een hellend dak?", "Ja, bij een renovatie kan bekeken worden of dakisolatie tegelijk uitgevoerd kan worden. Dat hangt af van de bestaande opbouw en de geplande dakwerken."],
+      ["Kan ik foto's doorsturen van mijn hellend dak?", "Ja. Stuur zowel overzichtsfoto's als detailbeelden van beschadigde dakpannen, aansluitingen of vochtplekken door. Daarmee kan Werner de situatie eerst beter inschatten."],
+      ["In welke regio voert Vandormael Werner werken aan hellende daken uit?", "Werner werkt vanuit Wellen en voert werken aan hellende daken uit in de ruime regio Limburg."],
+    ],
   },
   {
     url: "/platte-daken/limburg/",
     title: "Platte daken Limburg | Roofing en EPDM | Vandormael Werner",
     description: "Werken aan platte daken in Limburg. Vandormael Werner helpt bij roofing, EPDM-afwerking, aansluitingen en herstellingen aan platte daken.",
     h1: "Platte daken in Limburg",
-    intro: "Vandormael Werner voert werken uit aan platte daken in de ruime regio Limburg. Dit kan gaan om roofing, EPDM-afwerking, aansluitingen, randen en herstellingen.",
+    intro: "Bij een plat dak is vooral de waterdichte afwerking belangrijk. Kleine problemen aan randen, naden of aansluitingen kunnen later grotere schade veroorzaken. Daarom wordt best eerst bekeken waar het probleem precies zit.",
     image: "plat-dak-roofing-epdm-vandormael-werner.jpg",
     alt: "Plat dak met roofing of EPDM-afwerking door Vandormael Werner",
-    practical: "Een plat dak vraagt bijzondere aandacht voor waterdichtheid, randen en aansluitingen. Afhankelijk van de situatie wordt gewerkt met roofing of EPDM-afwerking waar van toepassing.",
-    examples: ["Roofing of EPDM-afwerking waar van toepassing", "Randen en aansluitingen", "Herstellingen aan platte daken", "Dakisolatie bij renovatie"],
+    listHeading: "Voor welke werken aan platte daken kan u terecht?",
+    practical: "Vandormael Werner voert werken uit aan platte daken in de ruime regio Limburg. Afhankelijk van de bestaande opbouw en het probleem kan het gaan om een herstelling, vernieuwing van dakdelen of afwerking met roofing of EPDM waar dat van toepassing is.",
+    examples: ["Herstellingen aan platte daken", "Roofing of EPDM-afwerking waar van toepassing", "Controle van randen en aansluitingen", "Problemen met waterinsijpeling", "Renovatie of vernieuwing van dakdelen", "Afwerking rond dakranden en details"],
+    attentionHeading: "Waar wordt op gelet bij een plat dak?",
+    attention: "Naast het dakvlak worden ook randen, naden, aansluitingen en de waterafvoer bekeken. Water dat blijft staan of een beschadiging rond een detail kan wijzen op een probleem dat verder onderzocht moet worden.",
     related: [0, 3, 4],
+    faq: [
+      ["Wanneer moet een plat dak hersteld worden?", "Neem contact op bij waterinsijpeling, loskomende afwerking, scheuren of schade aan randen en aansluitingen. Ook wanneer u twijfelt over een oudere dakbedekking kan een controle nuttig zijn."],
+      ["Werkt Vandormael Werner met roofing of EPDM?", "Werner voert werken uit met roofing en, waar van toepassing, EPDM-afwerking. Welke aanpak past, hangt af van het bestaande dak en de geplande werken."],
+      ["Hoe weet ik of mijn plat dak lekt?", "Vochtplekken binnen zijn een duidelijk signaal, maar een lek kan ook zichtbaar worden aan beschadigde naden, randen of aansluitingen. De plaats waar water binnenkomt, ligt niet altijd recht boven de vochtplek."],
+      ["Kan een plat dak ook geisoleerd worden?", "Ja, bij renovatiewerken aan een plat dak kan isolatie mee bekeken worden. De geschikte opbouw hangt af van de bestaande situatie."],
+      ["Kan ik foto's van mijn plat dak doorsturen?", "Ja. Foto's van het volledige dakvlak en duidelijke details van randen, afvoer en zichtbare schade helpen bij een eerste bespreking."],
+    ],
   },
   {
     url: "/dakisolatie/limburg/",
     title: "Dakisolatie Limburg | Hellend en plat dak isoleren | Vandormael Werner",
     description: "Dakisolatie voor hellende en platte daken in Limburg. Vandormael Werner voert dakisolatiewerken uit en bezorgt duidelijke factuurinformatie voor mogelijke premieaanvragen.",
     h1: "Dakisolatie in Limburg",
-    intro: "Dakisolatie kan een belangrijk onderdeel zijn van een dakrenovatie. Vandormael Werner voert dakisolatiewerken uit in de ruime regio Limburg, met Wellen als uitvalsbasis.",
+    intro: "Dakisolatie kan een belangrijk onderdeel zijn van een dakrenovatie. Ze helpt om warmteverlies via het dak te beperken en kan het comfort in de woning verbeteren. Werner bekijkt hoe de isolatie past bij het hellende of platte dak en de werken die nodig zijn.",
     image: "dakisolatie-hellend-dak-limburg.jpg",
     alt: "Dakisolatie bij renovatie van een hellend dak in Limburg",
-    practical: "Bij dakisolatiewerken kan Vandormael Werner de nodige factuurinformatie en uitvoeringsdocumenten bezorgen die u nodig hebt voor een mogelijke premieaanvraag. De voorwaarden kunnen wijzigen. Raadpleeg altijd de officiële website van de Vlaamse overheid of Mijn VerbouwPremie.",
-    examples: ["Dakisolatie bij een renovatie", "Isolatie van een hellend dak", "Isolatie van een plat dak", "Uitvoeringsdocumenten voor een mogelijke premieaanvraag"],
+    listHeading: "Voor welke dakisolatiewerken kan u contact opnemen?",
+    practical: "Dakisolatie wordt vaak gecombineerd met andere dakwerken. Voor de plaatsing wordt eerst naar de bestaande dakopbouw gekeken, zodat de isolatie en afwerking correct op elkaar aansluiten.",
+    examples: ["Dakisolatie bij renovatie van een hellend dak", "Isolatie bij werken aan een plat dak", "Bekijken van de bestaande dakopbouw", "Combinatie met dakwerken of herstellingen", "Correcte afwerking rond aansluitingen", "Documenten voor een mogelijke premieaanvraag waar relevant"],
+    attentionHeading: "Waar wordt op gelet bij dakisolatie?",
+    attention: "De bestaande dakopbouw, mogelijke vochtproblemen en de aansluitingen rond de isolatie zijn belangrijke aandachtspunten. Ook ventilatie wordt, waar relevant, in de volledige dakopbouw bekeken. Een correcte uitvoering is vooral belangrijk wanneer isolatie samen met een dakrenovatie geplaatst wordt.",
     related: [0, 1, 2],
     faq: [
-      ["Welke soorten dakisolatie bestaan er?", "De geschikte opbouw hangt af van het daktype en de bestaande situatie. Vandormael Werner bekijkt welke aanpak passend is."],
-      ["Kan een hellend dak geïsoleerd worden?", "Ja, dakisolatie kan deel uitmaken van de renovatie van een hellend dak."],
-      ["Kan een plat dak geïsoleerd worden?", "Ja, ook bij werken aan een plat dak kan isolatie worden bekeken als onderdeel van de dakopbouw."],
-      ["Krijg ik documenten voor een mogelijke premieaanvraag?", "Bij uitvoering kunnen de nodige factuurinformatie en uitvoeringsdocumenten worden bezorgd. De premievoorwaarden kunnen wijzigen."],
+      ["Kan een hellend dak geïsoleerd worden?", "Ja, dakisolatie kan deel uitmaken van de renovatie van een hellend dak. De aanpak hangt af van de bestaande dakopbouw en de geplande werken."],
+      ["Kan een plat dak geïsoleerd worden?", "Ja, ook bij werken aan een plat dak kan isolatie mee bekeken worden. Eerst wordt nagegaan welke opbouw technisch past bij de bestaande situatie."],
+      ["Kan dakisolatie gecombineerd worden met dakrenovatie?", "Ja, dat is vaak een logisch moment om de isolatie mee aan te pakken. Zo kunnen dakbedekking, isolatie en aansluitingen samen bekeken worden."],
+      ["Krijg ik documenten voor een mogelijke premieaanvraag?", "Bij dakisolatiewerken kan Vandormael Werner de nodige factuurinformatie of uitvoeringsdocumenten bezorgen voor een mogelijke premieaanvraag. Dit is geen garantie op goedkeuring."],
+      ["Wie controleert of ik recht heb op een premie?", "De voorwaarden kunnen wijzigen. Controleer daarom altijd de actuele informatie bij de bevoegde overheid of Mijn VerbouwPremie."],
+      ["Werkt Vandormael Werner in heel Limburg voor dakisolatie?", "Werner werkt vanuit Wellen en voert dakisolatiewerken uit in de ruime regio Limburg."],
     ],
   },
   {
@@ -87,36 +122,67 @@ const pages = [
     title: "Dakherstelling Limburg | Lekkend dak herstellen | Vandormael Werner",
     description: "Dakherstelling in Limburg nodig? Vandormael Werner helpt bij lekkende daken, schade aan dakpannen, goten, aansluitingen en kleinere dakwerken.",
     h1: "Dakherstellingen in Limburg",
-    intro: "Bij schade, lekkage of twijfel over de staat van uw dak kan u contact opnemen met Vandormael Werner. Er wordt bekeken wat nodig is en welke herstelling mogelijk is.",
+    intro: "Bij dakschade is het vaak beter om niet te lang te wachten. Een klein probleem kan groter worden wanneer er water onder de dakbedekking geraakt. Met enkele foto's kan Werner soms al een eerste beeld krijgen van de situatie.",
     image: "dakherstelling-regio-limburg.jpg",
     alt: "Dakherstelling aan hellend dak in regio Limburg",
-    practical: "Een tijdige herstelling kan verdere schade helpen beperken. Stuur enkele foto's door of neem contact op om de situatie te bespreken.",
-    examples: ["Een lekkend dak", "Verschoven dakpannen", "Schade na wind of regen", "Problemen aan goten of aansluitingen", "Kleinere herstellingen"],
+    listHeading: "Voor welke dakherstellingen kan u contact opnemen?",
+    practical: "Een lekkend dak, verschoven dakpannen of problemen aan goten en aansluitingen kunnen verschillende oorzaken hebben. Werner bekijkt waar de schade zit en of een gerichte herstelling voldoende is.",
+    examples: ["Lekkage of vermoeden van een lek", "Verschoven of beschadigde dakpannen", "Schade na wind of regen", "Problemen aan dakgoten of aansluitingen", "Vochtplekken binnen", "Kleinere herstellingen aan het dak"],
+    attentionHeading: "Waar wordt op gelet bij een dakherstelling?",
+    attention: "De zichtbare schade is niet altijd de volledige oorzaak. Daarom wordt ook gekeken naar de omliggende dakbedekking, aansluitingen, goten en plaatsen waar water onder het dak kan raken. Foto's zijn nuttig voor een eerste beeld, maar soms is een plaatsbezoek nodig.",
     related: [0, 1, 2, 5],
+    faq: [
+      ["Wat doe ik bij een lekkend dak?", "Probeer indien mogelijk foto's te maken van de vochtplek en van het dak aan de buitenzijde. Neem daarna contact op om de situatie te bespreken en wacht niet tot de schade groter wordt."],
+      ["Kan ik foto's doorsturen van de schade?", "Ja. Stuur duidelijke detailfoto's en enkele overzichtsbeelden door. Daarmee kan Werner soms al inschatten welke onderdelen verder bekeken moeten worden."],
+      ["Herstelt Vandormael Werner ook kleine dakproblemen?", "Ja, ook kleinere dakherstellingen kunnen besproken worden. Denk aan een beperkt probleem met dakpannen, een aansluiting of een goot."],
+      ["Doet Vandormael Werner schade na wind of regen?", "U kan contact opnemen om schade na wind of regen te laten bekijken. De situatie en de praktische planning worden eerst met u besproken."],
+      ["Hoe weet ik of een dakherstelling voldoende is?", "Dat hangt af van de oorzaak, de omvang van de schade en de staat van de rest van het dak. Werner bekijkt eerst of een plaatselijke herstelling logisch is."],
+      ["In welke regio voert Werner dakherstellingen uit?", "Werner werkt vanuit Wellen en voert dakherstellingen uit in de ruime regio Limburg."],
+    ],
   },
   {
     url: "/zinkwerken-koperwerken-loodwerken/limburg/",
     title: "Zinkwerken Limburg | Koper- en loodwerken | Vandormael Werner",
     description: "Zinkwerken, koperwerken en loodwerken in Limburg voor dakgoten, aansluitingen, randen en dakafwerking. Vandormael Werner werkt vanuit Wellen.",
     h1: "Zink-, koper- en loodwerken in Limburg",
-    intro: "Voor dakafwerking in zink, koper en lood kan u terecht bij Vandormael Werner. Deze werken zijn belangrijk voor een nette afwerking, correcte afwatering en goede aansluiting van het dak.",
+    intro: "Zink-, koper- en loodwerken zijn vaak de details die bepalen of een dak netjes en waterdicht afgewerkt is. Vooral bij randen, goten en aansluitingen is een correcte plaatsing belangrijk.",
     image: "zinkwerken-dakgoot-limburg.jpg",
     alt: "Zinkwerk en dakgoot bij dakrenovatie in Limburg",
-    practical: "Dakgoten, randen en aansluitingen helpen regenwater correct af te voeren en het dak netjes af te werken. De nodige ingreep wordt afgestemd op de bestaande situatie.",
-    examples: ["Dakgoten en afvoer", "Aansluitingen en slabben", "Dak- en randafwerking", "Herstellingen aan bestaand zinkwerk"],
+    listHeading: "Voor welke zink-, koper- en loodwerken kan u terecht?",
+    practical: "Deze materialen worden gebruikt voor de afwerking en waterafvoer rond verschillende dakdelen. De nodige ingreep wordt afgestemd op het bestaande dak en kan zowel deel zijn van een renovatie als van een gerichte herstelling.",
+    examples: ["Dakgoten", "Afwerking aan dakranden", "Aansluitingen", "Loodslabben of loodafwerking waar van toepassing", "Zinkwerk rond dakdetails", "Herstellingen aan bestaande afwerking"],
+    attentionHeading: "Waar wordt op gelet bij dakafwerking en waterafvoer?",
+    attention: "Regenwater moet vlot afgevoerd worden en aansluitingen moeten waterdicht blijven. Daarom wordt gelet op de staat van goten, randen, slabben en details rond andere dakelementen. Een nette aansluiting helpt om problemen op moeilijk zichtbare plaatsen te voorkomen.",
     related: [0, 1, 4],
+    faq: [
+      ["Waarvoor dienen zink-, koper- en loodwerken aan een dak?", "Ze worden gebruikt voor goten, randen, slabben en andere aansluitingen. Deze details helpen regenwater af te voeren en het dak waterdicht af te werken."],
+      ["Kan een dakgoot hersteld of vernieuwd worden?", "Ja, afhankelijk van de staat kan een bestaande goot hersteld of vernieuwd worden. Eerst wordt bekeken waar het probleem zit en hoe de goot aansluit op het dak."],
+      ["Waarom zijn aansluitingen zo belangrijk?", "Water zoekt vaak zijn weg langs randen en overgangen tussen verschillende materialen. Een correcte aansluiting helpt waterinsijpeling op die plaatsen te voorkomen."],
+      ["Doet Vandormael Werner ook kleinere zinkwerken?", "Ja, ook een beperkte herstelling of afwerking in zink kan besproken worden. Foto's helpen om vooraf een eerste beeld te krijgen."],
+      ["In welke regio voert Werner zinkwerken uit?", "Werner werkt vanuit Wellen en voert zink-, koper- en loodwerken uit in de ruime regio Limburg."],
+    ],
   },
   {
     url: "/kleinere-dakwerken/limburg/",
     title: "Kleinere dakwerken Limburg | Vandormael Werner",
     description: "Ook voor kleinere dakwerken en klussen in en rond de woning kan u contact opnemen met Vandormael Werner uit Wellen, actief in de ruime regio Limburg.",
     h1: "Kleinere dakwerken en klussen in Limburg",
-    intro: "Naast grotere dakwerken kan u bij Vandormael Werner ook terecht voor kleinere dakwerken en klussen in en rond de woning. Ideaal wanneer een kleine ingreep tijdig moet worden uitgevoerd.",
+    intro: "Naast grotere dakwerken kan u bij Vandormael Werner ook terecht voor kleinere dakwerken en praktische herstellingen. Deze aanvullende service blijft vooral gericht op beperkte werken aan of rond het dak en kleine ingrepen in en rond de woning.",
     image: "kleinere-dakwerken-klussen-vandormael-werner.jpg",
     alt: "Kleinere dakwerken en afwerking aan woning door Vandormael Werner",
-    practical: "Niet elk werk vraagt een volledige dakrenovatie. Neem contact op om een kleinere herstelling of praktische klus te bespreken.",
-    examples: ["Kleine herstellingen aan het dak", "Afwerking in en rond de woning", "Problemen aan goten of aansluitingen", "Praktische klussen"],
+    listHeading: "Voor welke kleinere werken kan u contact opnemen?",
+    practical: "Niet elk probleem vraagt een volledige dakrenovatie. Een beperkte beschadiging, een losse afwerking of een klein probleem aan een goot kan best tijdig bekeken worden. Stuur enkele foto's door om te bespreken of Werner u ermee kan helpen.",
+    examples: ["Kleine dakherstellingen", "Afwerking rond dak of goot", "Kleine aansluitingen", "Controle van beperkte schade", "Praktische werken in en rond de woning waar relevant", "Kleine ingrepen die best niet blijven liggen"],
+    attentionHeading: "Hoe worden kleinere werken bekeken?",
+    attention: "Ook bij een klein werk is het belangrijk om eerst de oorzaak en omvang te kennen. Werner bekijkt of het om een afgebakende ingreep gaat en of ze praktisch gecombineerd kan worden met andere dakgerelateerde werken.",
     related: [0, 4, 5],
+    faq: [
+      ["Kan ik ook contact opnemen voor een klein dakwerk?", "Ja. Kleine dakherstellingen en beperkte afwerkingen kunnen eerst met Werner besproken worden. Stuur bij voorkeur enkele foto's mee."],
+      ["Doet Vandormael Werner ook kleine herstellingen?", "Ja, zolang het werk past binnen de praktische planning en het soort werken dat Werner uitvoert. Dakwerken blijven de hoofdactiviteit."],
+      ["Is een plaatsbezoek nodig voor kleine werken?", "Niet altijd voor de eerste bespreking. Met duidelijke foto's kan Werner vaak al zien of een plaatsbezoek nodig is."],
+      ["Kan ik foto's doorsturen?", "Ja. Maak een overzichtsfoto en enkele duidelijke detailfoto's van het probleem. Vermeld ook kort waar aan de woning de schade zit."],
+      ["In welke regio voert Werner kleinere dakwerken uit?", "Werner werkt vanuit Wellen en bespreekt kleinere dakwerken in de ruime regio Limburg."],
+    ],
   },
   { url: "/projecten/", title: "Projecten dakwerken Limburg | Vandormael Werner", description: "Bekijk enkele voorbeelden van dakwerken, dakisolatie, dakherstellingen, platte daken en zinkwerken uitgevoerd door Vandormael Werner in Limburg.", h1: "Een selectie van dakwerken en uitgevoerde projecten", type: "projects", image: "hellend-dak-vandormael-werner-limburg.jpg", alt: "Hellend dak uitgevoerd door Vandormael Werner in Limburg" },
   { url: "/over-vandormael-werner/", title: "Over Vandormael Werner | Dakwerker uit Wellen", description: "Vandormael Werner is een dakwerker uit Wellen die dakwerken uitvoert in de ruime regio Limburg. Voor algemene dakwerken, herstellingen, isolatie en dakafwerking.", h1: "Over Vandormael Werner", type: "about", image: "werner-vandormael-dakwerker-limburg.jpg", alt: "Werner Vandormael aan het werk als dakwerker in Limburg" },
@@ -166,8 +232,11 @@ function serviceCards() {
   <a class="extra-service-card" href="${services[6][1]}"><figure>${img(services[6][2], services[6][3])}</figure><div class="extra-copy"><span>Aanvullende service</span><h3>Kleinere dakwerken en klussen</h3><p>Naast de grotere dakwerken kan u ook terecht voor kleinere dakwerken, praktische herstellingen en klussen in en rond de woning. Deze service blijft aanvullend op de dakwerken.</p><b>Meer info →</b></div></a>`;
 }
 
-function contactCta() {
-  return `<section class="cta"><div class="container cta-inner"><div><span class="kicker">Uw dakwerk bespreken</span><h2>Contact opnemen met Vandormael Werner</h2><p>Stuur enkele foto's van uw dak door of neem telefonisch contact op om de situatie te bespreken.</p></div><div class="actions"><a class="btn btn-white" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="mailto:${email}">Stuur een e-mail</a></div></div></section>`;
+function contactCta(servicePage = false) {
+  const copy = servicePage
+    ? "Wilt u een dakwerk bespreken? Bel Werner of stuur enkele foto's door via e-mail, zodat de situatie eerst bekeken kan worden."
+    : "Stuur enkele foto's van uw dak door of neem telefonisch contact op om de situatie te bespreken.";
+  return `<section class="cta"><div class="container cta-inner"><div><span class="kicker">Uw dakwerk bespreken</span><h2>Contact opnemen met Vandormael Werner</h2><p>${copy}</p></div><div class="actions"><a class="btn btn-white" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="mailto:${email}">Stuur een e-mail</a></div></div></section>`;
 }
 
 function homeContact() {
@@ -202,11 +271,11 @@ function projectGrid(limit = services.length) {
 }
 
 function serviceBody(page) {
-  const faq = page.faq || [["In welke regio voert Vandormael Werner deze werken uit?", "Vandormael Werner werkt vanuit Wellen en voert dakwerken uit in de ruime regio Limburg."], ["Kan ik foto's doorsturen?", "Ja, u kan foto's doorsturen zodat de situatie eerst bekeken kan worden."]];
   return `<main>${breadcrumbs(page)}<section class="page-hero"><div class="container"><span class="eyebrow">Vandormael Werner · Wellen</span><h1>${page.h1}</h1><p>${page.intro}</p><div class="actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline" href="/contact/">Contact opnemen</a></div></div></section>
-  <section><div class="container split"><div><span class="kicker">Praktische uitleg</span><h2>Wanneer kan u contact opnemen?</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="text-link" href="/contact/">Bespreek uw dakwerk</a></div><figure class="photo">${img(page.image, page.alt)}</figure></div></section>
-  <section class="soft"><div class="container"><div class="section-head"><div><span class="kicker">Gerelateerde diensten</span><h2>Meer dakwerken in Limburg</h2></div></div><div class="related">${page.related.map(i => `<a href="${services[i][1]}">${services[i][0]} in Limburg</a>`).join("")}</div></div></section>
-  <section><div class="container narrow"><div class="section-head"><div><span class="kicker">Veelgestelde vragen</span><h2>Praktische antwoorden</h2></div></div>${faqBlock(faq)}</div></section>${contactCta()}</main>`;
+  <section><div class="container split"><div><span class="kicker">Praktische uitleg</span><h2>${page.listHeading}</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="text-link" href="/contact/">Bespreek uw dakwerk</a></div><figure class="photo">${img(page.image, page.alt)}</figure></div></section>
+  <section class="soft"><div class="container narrow"><div class="section-head"><div><span class="kicker">Aandachtspunten</span><h2>${page.attentionHeading}</h2><p>${page.attention}</p></div></div></div></section>
+  <section><div class="container"><div class="section-head"><div><span class="kicker">Gerelateerde diensten</span><h2>Meer dakwerken in Limburg</h2></div></div><div class="related">${page.related.map(i => `<a href="${services[i][1]}">${services[i][0]} in Limburg</a>`).join("")}</div></div></section>
+  <section class="soft"><div class="container narrow"><div class="section-head"><div><span class="kicker">Veelgestelde vragen</span><h2>Praktische antwoorden</h2></div></div>${faqBlock(page.faq)}</div></section>${contactCta(true)}</main>`;
 }
 
 function projectBody(page) {

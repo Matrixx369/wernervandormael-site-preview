@@ -25,6 +25,7 @@ Production-ready static website for `https://wernervandormael.be`.
 - `/over-vandormael-werner/`
 - `/contact/`
 - `/privacybeleid/`
+- `/algemene-voorwaarden/`
 
 ## Build and images
 

@@ -196,5 +196,23 @@
         "item": "https://wernervandormael.be/privacybeleid/"
       }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wernervandormael.be/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Algemene voorwaarden",
+        "item": "https://wernervandormael.be/algemene-voorwaarden/"
+      }
+    ]
   }
 ]

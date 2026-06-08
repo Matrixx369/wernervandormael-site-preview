@@ -16,6 +16,7 @@ const files = [
   "site.webmanifest",
   "assets",
   "contact",
+  "algemene-voorwaarden",
   "dakherstellingen",
   "dakisolatie",
   "dakwerken",

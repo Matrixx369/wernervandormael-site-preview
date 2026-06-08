@@ -7,6 +7,7 @@ const pages = [
   "/dakisolatie/limburg/", "/dakherstellingen/limburg/",
   "/zinkwerken-koperwerken-loodwerken/limburg/", "/kleinere-dakwerken/limburg/",
   "/projecten/", "/over-vandormael-werner/", "/contact/", "/privacybeleid/",
+  "/algemene-voorwaarden/",
 ];
 const errors = [];
 const titles = new Set();

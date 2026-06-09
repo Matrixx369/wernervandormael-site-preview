@@ -118,6 +118,7 @@ if (!contactHtml.includes("U kan via WhatsApp of e-mail ook enkele foto's meestu
 if (!contactHtml.includes("werner-vandormael-dakwerker-limburg")) errors.push("/contact/: missing Werner trust image");
 if (!contactHtml.includes('alt="Werner Vandormael aan het werk als dakwerker in Limburg"')) errors.push("/contact/: Werner image alt text is missing");
 if (contactHtml.includes("Voorkeur contact")) errors.push("/contact/: preference contact field remains");
+if (contactHtml.includes("contact-address-divider") || contactHtml.includes('aria-hidden="true">·')) errors.push("/contact/: stray address separator remains");
 const mainJs = fs.readFileSync(path.join(root, "assets", "js", "main.js"), "utf8");
 if (!mainJs.includes("messageFromForm") || !mainJs.includes("contact-whatsapp-submit")) errors.push("/contact/: form email/WhatsApp behavior is missing");
 if (mainJs.includes("Voorkeur contact")) errors.push("/contact/: JavaScript still expects preference contact");
@@ -126,6 +127,8 @@ const aboutHtml = fs.readFileSync(fileFor("/over-vandormael-werner/"), "utf8");
 if (aboutHtml.includes("Bekijk de dakwerken")) errors.push("/over-vandormael-werner/: old secondary CTA remains");
 if (aboutHtml.includes('class="page-hero"')) errors.push("/over-vandormael-werner/: old empty hero remains");
 if (!aboutHtml.includes('class="soft about-page-top"') || !aboutHtml.includes("Rechtstreeks contact met een lokale dakwerker uit Limburg.")) errors.push("/over-vandormael-werner/: mockup-style top section is missing");
+const termsHtml = fs.readFileSync(fileFor("/algemene-voorwaarden/"), "utf8");
+if (termsHtml.includes('aria-hidden="true">·')) errors.push("/algemene-voorwaarden/: stray contact separator remains");
 
 for (const url of pages) {
   const html = fs.readFileSync(fileFor(url), "utf8");

@@ -48,6 +48,8 @@ async function validate() {
   if (!home.includes("Afhankelijk van het project zijn ook werken in omliggende gemeenten buiten Limburg mogelijk.")) errors.push("/: work area sentence is incorrect");
   if (about.includes('class="page-hero"') || !about.includes('class="soft about-page-top"')) errors.push("/over-vandormael-werner/: old empty hero remains");
   if (contact.indexOf("contact-form") > contact.indexOf("contact-address")) errors.push("/contact/: form-first lower layout is missing");
+  if (contact.includes("contact-address-divider") || contact.includes('aria-hidden="true">·')) errors.push("/contact/: stray address separator remains");
+  if (pages.get("/algemene-voorwaarden/").includes('aria-hidden="true">·')) errors.push("/algemene-voorwaarden/: stray contact separator remains");
   for (const route of routes.filter(route => route.includes("/limburg/"))) {
     const html = pages.get(route);
     for (const wrong of ["Dakwerker uit Wellen", "Vandormael Werner · Wellen", "Meer dakwerken in Limburg", "Praktische antwoorden"]) {

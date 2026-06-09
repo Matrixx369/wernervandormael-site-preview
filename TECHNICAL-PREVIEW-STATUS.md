@@ -2,8 +2,10 @@
 
 Status date: 8 June 2026
 
-This branch is frozen as a technical SEO/GEO review state. The current visual
-design is not approved. Visual redesign is postponed to a separate later round.
+This branch remains a technical SEO/GEO review state. The premium service-page
+visual direction is approved as the current model and has been applied to all
+seven service pages. The homepage, contact page and over page are not yet fully
+harmonized with that premium service-page style.
 
 ## Preview
 
@@ -14,6 +16,7 @@ design is not approved. Visual redesign is postponed to a separate later round.
 - The GitHub Pages artifact is marked `noindex,nofollow` and its preview
   `robots.txt` blocks crawling.
 - Nothing in this branch deploys to `https://wernervandormael.be`.
+- Production deployment is not approved.
 - Do not merge this branch to `main` or `master` yet.
 
 ## Generated Pages
@@ -31,9 +34,10 @@ design is not approved. Visual redesign is postponed to a separate later round.
 - `/privacybeleid/`
 - `/algemene-voorwaarden/`
 
-The site currently generates 12 public pages. The Projecten page and homepage
-project section are postponed. Existing images remain preserved for possible
-later project or gallery use.
+The site currently generates 12 public pages and `sitemap.xml` contains 12
+URLs. The Projecten page remains removed and the homepage project section is
+postponed. Existing images remain preserved for possible later project or
+gallery use.
 
 ## Preserved Technical Assets
 
@@ -54,10 +58,12 @@ later project or gallery use.
 
 ## Known Issues And Deferred Work
 
-- The visual design is not approved and does not yet match the approved mockup
-  closely enough.
-- Header, hero, typography, spacing, cards and footer
-  require a separate visual regression and design round.
+- The premium service-page visual direction is approved as the current model
+  across all seven service pages.
+- The homepage, contact page and over page are not yet fully harmonized with
+  the premium service-page style.
+- Practical-section image selection across the service pages is still pending
+  review.
 - The Projecten page and homepage project section are postponed.
 - The contact forms use a `mailto:` fallback rather than a verified form
   delivery backend.
@@ -68,10 +74,11 @@ later project or gallery use.
 
 ## Later Design Round
 
-Start from the approved mockup and create a visual regression checklist before
-editing. Preserve the current URLs, service-page content, metadata, schema,
-internal links, images and legal pages. Review desktop and mobile screenshots
-against the mockup before approving any production deployment.
+Use the approved premium service-page pattern as the current model when
+harmonizing the homepage, contact page and over page. Review practical-section
+image choices and compare desktop and mobile screenshots before approving any
+production deployment. Preserve the current URLs, service-page content,
+metadata, schema, internal links, images and legal pages.
 
 ## Premium Service-Page Pattern
 

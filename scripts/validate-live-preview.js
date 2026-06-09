@@ -37,12 +37,30 @@ function visibleText(html) {
 
 async function validate() {
   const errors = [];
+  const pages = new Map();
   for (const route of routes) {
     const html = await fetchText(route);
+    pages.set(route, html);
     const text = visibleText(html);
     for (const oldString of oldTemplateStrings) {
       if (html.includes(oldString) || text.includes(oldString)) errors.push(`${route}: old template output remains: ${oldString}`);
     }
+  }
+
+  const home = pages.get("/");
+  const about = pages.get("/over-vandormael-werner/");
+  const contact = pages.get("/contact/");
+  if (!home.includes('class="dark work-showcase"') || home.includes("Bekijk projecten") || home.includes("/projecten/")) errors.push("/: homepage work visual section is incorrect");
+  if (!home.includes("Afhankelijk van het project zijn ook werken in omliggende gemeenten buiten Limburg mogelijk.")) errors.push("/: work area sentence is incorrect");
+  if (about.includes('class="page-hero"') || !about.includes('class="soft about-page-top"')) errors.push("/over-vandormael-werner/: old empty hero remains");
+  if (contact.indexOf("contact-form") > contact.indexOf("contact-address")) errors.push("/contact/: form-first lower layout is missing");
+  for (const route of routes.filter(route => route.includes("/limburg/"))) {
+    const html = pages.get(route);
+    for (const wrong of ["Dakwerker uit Wellen", "Vandormael Werner · Wellen", "Meer dakwerken in Limburg", "Praktische antwoorden"]) {
+      if (html.includes(wrong)) errors.push(`${route}: old service layout text remains: ${wrong}`);
+    }
+    if (!html.includes('<span class="eyebrow">Dakwerker uit Limburg</span>')) errors.push(`${route}: service hero badge is incorrect`);
+    if (!html.includes("<h2>Gerelateerde dakwerken</h2>") || !html.includes("Veelgestelde vragen over ")) errors.push(`${route}: refined section headings are missing`);
   }
 
   const projects = await fetch(new URL(`projecten/?validation=${Date.now()}`, baseUrl), { cache: "no-store" });

@@ -56,6 +56,12 @@ for (const url of pages) {
     const faqCount = (html.match(/<div class="faq">[\s\S]*?<\/div>/)?.[0].match(/<details>/g) || []).length;
     if (faqCount < 4 || faqCount > 6) errors.push(`${url}: expected 4-6 visible FAQs, found ${faqCount}`);
     if (html.includes("Wanneer kan u contact opnemen?")) errors.push(`${url}: still uses the generic service-list heading`);
+    if (!html.includes('<span class="eyebrow">Dakwerker uit Limburg</span>')) errors.push(`${url}: service hero badge is incorrect`);
+    if (!html.includes(">Bel Werner</a>") || !html.includes(">WhatsApp Werner</a>")) errors.push(`${url}: service hero CTAs are incomplete`);
+    if (html.includes(">Contact opnemen</a>")) errors.push(`${url}: old service hero CTA remains`);
+    if (!html.includes("<h2>Gerelateerde dakwerken</h2>")) errors.push(`${url}: related services heading is incorrect`);
+    if (!html.includes("Veelgestelde vragen over ")) errors.push(`${url}: service-specific FAQ heading is missing`);
+    if (!html.includes('class="container narrow service-attention"')) errors.push(`${url}: balanced attention section is missing`);
   }
   const h1s = html.match(/<h1\b/g) || [];
   if (h1s.length !== 1) errors.push(`${url}: expected 1 H1, found ${h1s.length}`);
@@ -96,9 +102,12 @@ for (const oldTrustItem of ["Lokale dakwerker uit Wellen", "Dakwerken in de ruim
 }
 if (homeHtml.includes('class="contact-list"') || homeHtml.includes('class="contact-card" action=')) errors.push("/: old homepage contact details/form block remains");
 if (!homeHtml.includes("Wilt u een dakwerk bespreken? Bel Werner of stuur een WhatsApp-bericht.")) errors.push("/: homepage contact CTA copy is missing");
+if (!homeHtml.includes('class="dark work-showcase"') || (homeHtml.match(/class="project"/g) || []).length !== 4) errors.push("/: homepage work visual section is missing or incomplete");
+if (homeHtml.includes("Bekijk projecten") || homeHtml.includes("/projecten/")) errors.push("/: projects page link or CTA remains");
+if (!homeHtml.includes("Afhankelijk van het project zijn ook werken in omliggende gemeenten buiten Limburg mogelijk.")) errors.push("/: updated work area sentence is missing");
 
 const contactHtml = fs.readFileSync(fileFor("/contact/"), "utf8");
-const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-address", "contact-form"].map(marker => contactHtml.indexOf(marker));
+const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-helper", "contact-form", "contact-address"].map(marker => contactHtml.indexOf(marker));
 if (contactOrder.some(position => position < 0) || contactOrder.some((position, index) => index && position < contactOrder[index - 1])) {
   errors.push("/contact/: contact sections are missing or out of order");
 }
@@ -118,6 +127,8 @@ if (mainJs.includes("Voorkeur contact")) errors.push("/contact/: JavaScript stil
 
 const aboutHtml = fs.readFileSync(fileFor("/over-vandormael-werner/"), "utf8");
 if (aboutHtml.includes("Bekijk de dakwerken")) errors.push("/over-vandormael-werner/: old secondary CTA remains");
+if (aboutHtml.includes('class="page-hero"')) errors.push("/over-vandormael-werner/: old empty hero remains");
+if (!aboutHtml.includes('class="soft about-page-top"') || !aboutHtml.includes("Rechtstreeks contact met een lokale dakwerker uit Limburg.")) errors.push("/over-vandormael-werner/: mockup-style top section is missing");
 
 for (const url of pages) {
   const html = fs.readFileSync(fileFor(url), "utf8");

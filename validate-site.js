@@ -72,6 +72,12 @@ const homeHtml = fs.readFileSync(fileFor("/"), "utf8");
 if (homeHtml.includes('class="extra-service-card"')) errors.push("/: smaller works still uses a service card");
 if (!homeHtml.includes('class="container split smaller-works"')) errors.push("/: missing mockup-style smaller works section");
 if (!homeHtml.includes("WhatsApp Werner")) errors.push("/: missing homepage WhatsApp CTA");
+if ((homeHtml.match(/<section class="trust">[\s\S]*?<\/section>/) || [""])[0].match(/<article>/g)?.length !== 3) errors.push("/: trust block must contain exactly three items");
+for (const oldTrustItem of ["Lokale dakwerker uit Wellen", "Dakwerken in de ruime regio Limburg", "Hellende en platte daken", "Ook voor kleinere dakwerken en herstellingen"]) {
+  if (homeHtml.includes(oldTrustItem)) errors.push(`/: old trust item remains: ${oldTrustItem}`);
+}
+if (homeHtml.includes('class="contact-list"') || homeHtml.includes('class="contact-card" action=')) errors.push("/: old homepage contact details/form block remains");
+if (!homeHtml.includes("Wilt u een dakwerk bespreken? Bel Werner of stuur een WhatsApp-bericht.")) errors.push("/: homepage contact CTA copy is missing");
 
 const contactHtml = fs.readFileSync(fileFor("/contact/"), "utf8");
 const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-address", "contact-form"].map(marker => contactHtml.indexOf(marker));
@@ -91,6 +97,20 @@ if (contactHtml.includes("Voorkeur contact")) errors.push("/contact/: preference
 const mainJs = fs.readFileSync(path.join(root, "assets", "js", "main.js"), "utf8");
 if (!mainJs.includes("messageFromForm") || !mainJs.includes("contact-whatsapp-submit")) errors.push("/contact/: form email/WhatsApp behavior is missing");
 if (mainJs.includes("Voorkeur contact")) errors.push("/contact/: JavaScript still expects preference contact");
+
+const aboutHtml = fs.readFileSync(fileFor("/over-vandormael-werner/"), "utf8");
+if (aboutHtml.includes("Bekijk de dakwerken")) errors.push("/over-vandormael-werner/: old secondary CTA remains");
+
+for (const url of pages) {
+  const html = fs.readFileSync(fileFor(url), "utf8");
+  if (!html.includes('class="footer-contact"') || !html.includes('class="footer-contact-links"')) errors.push(`${url}: footer contact is not semantically separated`);
+}
+
+for (const url of pages.filter(url => url.includes("/limburg/"))) {
+  const html = fs.readFileSync(fileFor(url), "utf8");
+  if (!html.includes('class="container compact-cta"')) errors.push(`${url}: compact service CTA is missing`);
+  if (html.includes('<section class="cta">')) errors.push(`${url}: old heavy red CTA remains`);
+}
 
 const allHtml = pages.map(url => fs.readFileSync(fileFor(url), "utf8")).join("\n").toLowerCase();
 for (const claim of ["beste dakwerker", "24/7", "30 jaar ervaring", "erkend specialist", "aggregateRating", "openingHours"]) {

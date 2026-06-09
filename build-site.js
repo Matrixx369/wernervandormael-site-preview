@@ -288,6 +288,28 @@ function serviceBody(page) {
   <section class="soft"><div class="container narrow"><div class="section-head"><div><span class="kicker">Veelgestelde vragen</span><h2>${serviceFaqHeading(page)}</h2></div></div>${faqBlock(page.faq)}</div></section>${contactCta(true)}</main>`;
 }
 
+function premiumGeneralServiceBody(page) {
+  const trustItems = [
+    ["⌖", "Lokale dakwerker", "Rechtstreeks contact met Werner zelf."],
+    ["✦", "Dakherstelling &amp; dakisolatie", "Voor kleinere werken én grotere dakprojecten."],
+    ["●", "Duidelijke communicatie", "Heldere afspraken voor dakwerken, isolatie en herstellingen."],
+  ];
+  const attentionItems = [
+    ["Staat van het dak", "Er wordt gekeken naar dakbedekking, aansluitingen, randen en mogelijke schade."],
+    ["Waterdichte afwerking", "Goten, randen en aansluitingen zijn belangrijk om vochtproblemen te voorkomen."],
+    ["Logische aanpak", "Soms volstaat een kleine herstelling, soms is een bredere aanpak verstandiger."],
+  ];
+  const related = [1, 2, 3, 4, 5];
+  return `<main class="premium-service-page">${breadcrumbs(page)}
+  <section class="premium-service-hero"><div class="premium-service-hero-bg">${img("werner-vandormael-dakwerker-limburg.jpg", "Werner Vandormael aan het werk als dakwerker in Limburg", "", true)}</div><div class="container premium-service-hero-inner"><span class="eyebrow">Dakwerker uit Limburg</span><h1>Algemene dakwerken in Limburg</h1><p>Vandormael Werner voert dakwerken uit in de ruime regio Limburg. Van herstellingen en renovatie tot dakisolatie, zink-, koper- en loodwerken en kleinere dakwerken. U neemt rechtstreeks contact op met Werner en krijgt duidelijke uitleg over de mogelijke aanpak.</p><div class="actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a></div></div></section>
+  <section class="premium-trust"><div class="container premium-trust-grid">${trustItems.map(([icon, title, text]) => `<article><span class="premium-trust-icon" aria-hidden="true">${icon}</span><div><strong>${title}</strong><p>${text}</p></div></article>`).join("")}</div></section>
+  <section class="premium-practical"><div class="container split premium-practical-grid"><div><span class="kicker">Praktische uitleg</span><h2>Voor welke dakwerken kan u contact opnemen?</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="btn btn-red" href="/contact/">Bespreek uw dakwerk</a></div><figure class="photo premium-practical-photo">${img("hellend-dak-vandormael-werner-limburg.jpg", "Hellend dak uitgevoerd door Vandormael Werner in Limburg")}</figure></div></section>
+  <section class="soft premium-attention-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Aandachtspunten</span><h2>Waar wordt op gelet bij algemene dakwerken?</h2><p>${page.attention}</p></div><div class="premium-attention-grid">${attentionItems.map(([title, text], index) => `<article><span aria-hidden="true">0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></div></section>
+  <section class="premium-related-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Gerelateerde diensten</span><h2>Gerelateerde dakwerken</h2></div><div class="premium-related">${related.map(i => `<a href="${services[i][1]}"><strong>${services[i][0]}</strong><span aria-hidden="true">→</span></a>`).join("")}</div></div></section>
+  <section class="soft premium-faq-section"><div class="container narrow"><div class="premium-section-heading"><span class="kicker">Veelgestelde vragen</span><h2>Veelgestelde vragen over dakwerken</h2></div>${faqBlock(page.faq)}</div></section>
+  <section class="premium-bottom-cta-section"><div class="container premium-bottom-cta"><div><span class="kicker">Contact</span><h2>Uw dakwerk bespreken?</h2><p>Heeft u een vraag over deze werken? Bel Werner, stuur een WhatsApp-bericht of stuur eventueel enkele foto's via WhatsApp of e-mail.</p></div><div class="cta-actions"><a class="btn btn-white" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline-light" href="mailto:${email}">Stuur een e-mail</a></div></div></section></main>`;
+}
+
 function aboutBody(page) {
   return `<main>${breadcrumbs(page)}<section class="soft about-page-top"><div class="container split about-section"><figure class="photo">${img(page.image, page.alt)}</figure><div><span class="kicker">Over Vandormael Werner</span><h1>Rechtstreeks contact met een lokale dakwerker uit Limburg.</h1><p>Bij Vandormael Werner spreekt u niet met een grote firma of tussenpersoon. U neemt rechtstreeks contact op met Werner, die de situatie mee bekijkt en duidelijk uitlegt wat mogelijk is.</p><p>De focus ligt op algemene dakwerken, dakisolatie, hellende daken, platte daken, dakherstellingen en afwerking in zink, koper en lood. Kleinere dakwerken of praktische klussen kunnen mee besproken worden.</p><ul class="checks"><li>Lokale dakwerker</li><li>Actief in Limburg en omliggende regio</li><li>Voor hellende en platte daken, dakisolatie, dakherstellingen en kleinere klussen</li><li>Duidelijke communicatie en praktische afspraken</li><li>Bereikbaar via telefoon, e-mail, WhatsApp of contactformulier</li></ul><a class="btn btn-red" href="/contact/">Contact opnemen</a></div></div></section>${contactCta()}</main>`;
 }
@@ -336,7 +358,7 @@ function schema(page) {
 }
 
 function render(page) {
-  const body = page.type === "home" ? homeBody(page) : page.type === "about" ? aboutBody(page) : page.type === "contact" ? contactBody(page) : page.type === "privacy" ? privacyBody(page) : page.type === "terms" ? termsBody(page) : serviceBody(page);
+  const body = page.type === "home" ? homeBody(page) : page.type === "about" ? aboutBody(page) : page.type === "contact" ? contactBody(page) : page.type === "privacy" ? privacyBody(page) : page.type === "terms" ? termsBody(page) : page.url === "/dakwerken/limburg/" ? premiumGeneralServiceBody(page) : serviceBody(page);
   const depth = page.url === "/" ? 0 : page.url.split("/").filter(Boolean).length;
   const prefix = depth ? "../".repeat(depth) : "";
   return `<!doctype html><html lang="nl-BE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${page.title}</title><meta name="description" content="${esc(page.description)}"><meta name="robots" content="index,follow"><link rel="canonical" href="${domain}${page.url}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:url" content="${domain}${page.url}"><meta property="og:image" content="${domain}/assets/images/optimized/${page.image}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(page.title)}"><meta name="twitter:description" content="${esc(page.description)}"><meta name="twitter:image" content="${domain}/assets/images/optimized/${page.image}"><meta name="theme-color" content="#b01822"><link rel="manifest" href="${prefix}site.webmanifest"><link rel="stylesheet" href="${prefix}assets/css/style.css"><script type="application/ld+json">${schema(page)}</script><script defer src="${prefix}assets/js/main.js"></script></head><body>${header()}${body}${footer()}</body></html>`

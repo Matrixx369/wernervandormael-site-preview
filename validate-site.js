@@ -55,7 +55,16 @@ for (const url of pages) {
     if (html.includes(">Contact opnemen</a>")) errors.push(`${url}: old service hero CTA remains`);
     if (!html.includes("<h2>Gerelateerde dakwerken</h2>")) errors.push(`${url}: related services heading is incorrect`);
     if (!html.includes("Veelgestelde vragen over ")) errors.push(`${url}: service-specific FAQ heading is missing`);
-    if (!html.includes('class="container narrow service-attention"')) errors.push(`${url}: balanced attention section is missing`);
+    if (url === "/dakwerken/limburg/") {
+      if (!html.includes('class="premium-service-page"') || !html.includes('class="premium-service-hero"')) errors.push(`${url}: isolated premium layout is missing`);
+      if (!html.includes('class="container premium-trust-grid"') || (html.match(/class="premium-trust-icon"/g) || []).length !== 3) errors.push(`${url}: premium trust strip is incomplete`);
+      if (!html.includes('class="btn btn-red" href="../../contact/">Bespreek uw dakwerk</a>')) errors.push(`${url}: practical CTA is not a real red button`);
+      if ((html.match(/<article><span aria-hidden="true">0[123]<\/span>/g) || []).length !== 3) errors.push(`${url}: premium attention cards are incomplete`);
+      if ((html.match(/<div class="premium-related">[\s\S]*?<\/div>/)?.[0].match(/<a /g) || []).length !== 5) errors.push(`${url}: premium related services are incomplete`);
+      if (!html.includes('class="container premium-bottom-cta"')) errors.push(`${url}: premium bottom CTA is missing`);
+    } else if (!html.includes('class="container narrow service-attention"')) {
+      errors.push(`${url}: balanced attention section is missing`);
+    }
   }
   const h1s = html.match(/<h1\b/g) || [];
   if (h1s.length !== 1) errors.push(`${url}: expected 1 H1, found ${h1s.length}`);
@@ -141,9 +150,9 @@ for (const url of pages) {
 
 for (const url of pages.filter(url => url.includes("/limburg/"))) {
   const html = fs.readFileSync(fileFor(url), "utf8");
-  if (!html.includes('class="container compact-cta"')) errors.push(`${url}: compact service CTA is missing`);
+  if (url !== "/dakwerken/limburg/" && !html.includes('class="container compact-cta"')) errors.push(`${url}: compact service CTA is missing`);
   if (html.includes('<section class="cta">')) errors.push(`${url}: old heavy red CTA remains`);
-  const serviceCtaActions = html.match(/<div class="container compact-cta">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
+  const serviceCtaActions = html.match(/<div class="container (?:compact-cta|premium-bottom-cta)">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
   if ((serviceCtaActions.match(/<a class="btn /g) || []).length !== 3) errors.push(`${url}: service CTA must contain three separate buttons`);
 }
 

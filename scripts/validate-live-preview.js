@@ -57,9 +57,12 @@ async function validate() {
     }
     if (!html.includes('<span class="eyebrow">Dakwerker uit Limburg</span>')) errors.push(`${route}: service hero badge is incorrect`);
     if (!html.includes("<h2>Gerelateerde dakwerken</h2>") || !html.includes("Veelgestelde vragen over ")) errors.push(`${route}: refined section headings are missing`);
-    const ctaActions = html.match(/<div class="container compact-cta">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
+    const ctaActions = html.match(/<div class="container (?:compact-cta|premium-bottom-cta)">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
     if ((ctaActions.match(/<a class="btn /g) || []).length !== 3) errors.push(`${route}: service CTA buttons are not separated`);
   }
+  const general = pages.get("/dakwerken/limburg/");
+  if (!general.includes('class="premium-service-page"') || !general.includes('class="premium-service-hero"')) errors.push("/dakwerken/limburg/: premium test layout is missing");
+  if (!general.includes(">Bespreek uw dakwerk</a>") || !general.includes('class="container premium-bottom-cta"')) errors.push("/dakwerken/limburg/: premium conversion CTAs are incomplete");
 
   const projects = await fetch(new URL(`projecten/?validation=${Date.now()}`, baseUrl), { cache: "no-store" });
   if (projects.status !== 404) errors.push(`/projecten/: expected HTTP 404, received ${projects.status}`);

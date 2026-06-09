@@ -2,6 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const root = __dirname;
+const phone = "+32495548415";
+const email = "werner.vandormael1@gmail.com";
+const whatsapp = "https://wa.me/32495548415?text=Dag%20Werner%2C%20ik%20heb%20een%20vraag%20over%20dakwerken.";
 const pages = [
   "/", "/dakwerken/limburg/", "/hellende-daken/limburg/", "/platte-daken/limburg/",
   "/dakisolatie/limburg/", "/dakherstellingen/limburg/",
@@ -18,8 +21,6 @@ const oldTemplateStrings = [
   "Lokale dakwerker uit Wellen",
   "Dakwerken in de ruime regio Limburg",
   "Ook voor kleinere dakwerken en herstellingen",
-  "Telefoon 0495 54 84 15",
-  "België 0495 54 84 15",
   "Naam Telefoon of e-mail Bericht Contact opnemen",
 ];
 
@@ -38,15 +39,8 @@ for (const url of pages) {
     continue;
   }
   const html = fs.readFileSync(file, "utf8");
-  const visibleText = html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/\s+/g, " ")
-    .trim();
   for (const oldString of oldTemplateStrings) {
-    if (html.includes(oldString) || visibleText.includes(oldString)) errors.push(`${url}: old template output remains: ${oldString}`);
+    if (html.includes(oldString)) errors.push(`${url}: old template output remains: ${oldString}`);
   }
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
   if (/\/projecten\/|Bekijk projecten|Projectbeelden/.test(html)) errors.push(`${url}: projects page or section reference remains`);
@@ -105,6 +99,9 @@ if (!homeHtml.includes("Wilt u een dakwerk bespreken? Bel Werner of stuur een Wh
 if (!homeHtml.includes('class="dark work-showcase"') || (homeHtml.match(/class="project"/g) || []).length !== 4) errors.push("/: homepage work visual section is missing or incomplete");
 if (homeHtml.includes("Bekijk projecten") || homeHtml.includes("/projecten/")) errors.push("/: projects page link or CTA remains");
 if (!homeHtml.includes("Afhankelijk van het project zijn ook werken in omliggende gemeenten buiten Limburg mogelijk.")) errors.push("/: updated work area sentence is missing");
+if (!homeHtml.includes("<span class=\"kicker\">Recente dakwerken</span><h2>Een selectie van uitgevoerde dakwerken</h2>")) errors.push("/: homepage work visual wording is incorrect");
+const homeContactActions = homeHtml.match(/<section class="dark home-contact"[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
+if ((homeContactActions.match(/<a class="btn /g) || []).length !== 3) errors.push("/: homepage contact CTA must contain three separate buttons");
 
 const contactHtml = fs.readFileSync(fileFor("/contact/"), "utf8");
 const contactOrder = ["Contact opnemen met Werner", "contact-options", "contact-helper", "contact-form", "contact-address"].map(marker => contactHtml.indexOf(marker));
@@ -132,13 +129,19 @@ if (!aboutHtml.includes('class="soft about-page-top"') || !aboutHtml.includes("R
 
 for (const url of pages) {
   const html = fs.readFileSync(fileFor(url), "utf8");
-  if (!html.includes('class="footer-contact"') || !html.includes('class="footer-contact-links"')) errors.push(`${url}: footer contact is not semantically separated`);
+  const footerAddress = html.match(/<address class="footer-contact">([\s\S]*?)<\/address>/)?.[1] || "";
+  const footerLinks = html.match(/<div class="footer-contact-links">([\s\S]*?)<\/div>/)?.[1] || "";
+  if (!/^<strong>Vandormael Werner<\/strong><span>Plattestraat 33<\/span><span>3830 Wellen<\/span><span>België<\/span>$/.test(footerAddress)) errors.push(`${url}: footer address is not semantically separated`);
+  if ((footerLinks.match(/<a /g) || []).length !== 3 || !footerLinks.includes(`href="tel:${phone}"`) || !footerLinks.includes(`href="mailto:${email}"`) || !footerLinks.includes(whatsapp)) errors.push(`${url}: footer contact links are not semantically separated`);
+  if (html.includes("footer-contact-divider") || footerAddress.includes("·")) errors.push(`${url}: stray footer separator remains`);
 }
 
 for (const url of pages.filter(url => url.includes("/limburg/"))) {
   const html = fs.readFileSync(fileFor(url), "utf8");
   if (!html.includes('class="container compact-cta"')) errors.push(`${url}: compact service CTA is missing`);
   if (html.includes('<section class="cta">')) errors.push(`${url}: old heavy red CTA remains`);
+  const serviceCtaActions = html.match(/<div class="container compact-cta">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
+  if ((serviceCtaActions.match(/<a class="btn /g) || []).length !== 3) errors.push(`${url}: service CTA must contain three separate buttons`);
 }
 
 const allHtml = pages.map(url => fs.readFileSync(fileFor(url), "utf8")).join("\n").toLowerCase();

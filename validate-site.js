@@ -14,6 +14,14 @@ const titles = new Set();
 const descriptions = new Set();
 const pageFiles = new Set(pages.map(url => path.resolve(fileFor(url))));
 const servicePages = new Set(pages.slice(1, 8));
+const oldTemplateStrings = [
+  "Lokale dakwerker uit Wellen",
+  "Dakwerken in de ruime regio Limburg",
+  "Ook voor kleinere dakwerken en herstellingen",
+  "Telefoon 0495 54 84 15",
+  "België 0495 54 84 15",
+  "Naam Telefoon of e-mail Bericht Contact opnemen",
+];
 
 if (fs.existsSync(fileFor("/projecten/"))) {
   errors.push("Removed page still exists: /projecten/");
@@ -30,6 +38,16 @@ for (const url of pages) {
     continue;
   }
   const html = fs.readFileSync(file, "utf8");
+  const visibleText = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+  for (const oldString of oldTemplateStrings) {
+    if (html.includes(oldString) || visibleText.includes(oldString)) errors.push(`${url}: old template output remains: ${oldString}`);
+  }
   if (/href="\//.test(html)) errors.push(`${url}: root-relative link will escape a GitHub Pages project subpath`);
   if (/\/projecten\/|Bekijk projecten|Projectbeelden/.test(html)) errors.push(`${url}: projects page or section reference remains`);
   if (!html.includes('href="https://wa.me/32495548415?text=Dag%20Werner%2C%20ik%20heb%20een%20vraag%20over%20dakwerken."')) errors.push(`${url}: missing WhatsApp contact link`);

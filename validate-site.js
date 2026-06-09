@@ -58,8 +58,8 @@ for (const url of pages) {
     if (url === "/dakwerken/limburg/") {
       if (!html.includes('class="premium-service-page"') || !html.includes('class="premium-service-hero"')) errors.push(`${url}: isolated premium layout is missing`);
       if (!html.includes('class="container premium-trust-grid"') || (html.match(/class="premium-trust-icon"/g) || []).length !== 3) errors.push(`${url}: premium trust strip is incomplete`);
-      if (!html.includes('class="btn btn-red" href="../../contact/">Bespreek uw dakwerk</a>')) errors.push(`${url}: practical CTA is not a real red button`);
-      if ((html.match(/<article><span aria-hidden="true">0[123]<\/span>/g) || []).length !== 3) errors.push(`${url}: premium attention cards are incomplete`);
+      if (!html.includes('class="btn btn-red" href="../../contact/">Bespreek uw dakwerk <span')) errors.push(`${url}: practical CTA is not a real red button`);
+      if ((html.match(/class="premium-attention-icon"/g) || []).length !== 3 || (html.match(/class="premium-attention-meta"/g) || []).length !== 3) errors.push(`${url}: premium attention cards are incomplete`);
       if ((html.match(/<div class="premium-related">[\s\S]*?<\/div>/)?.[0].match(/<a /g) || []).length !== 5) errors.push(`${url}: premium related services are incomplete`);
       if (!html.includes('class="container premium-bottom-cta"')) errors.push(`${url}: premium bottom CTA is missing`);
     } else if (!html.includes('class="container narrow service-attention"')) {

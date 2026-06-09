@@ -62,7 +62,7 @@ async function validate() {
   }
   const general = pages.get("/dakwerken/limburg/");
   if (!general.includes('class="premium-service-page"') || !general.includes('class="premium-service-hero"')) errors.push("/dakwerken/limburg/: premium test layout is missing");
-  if (!general.includes(">Bespreek uw dakwerk</a>") || !general.includes('class="container premium-bottom-cta"')) errors.push("/dakwerken/limburg/: premium conversion CTAs are incomplete");
+  if (!general.includes(">Bespreek uw dakwerk <span") || !general.includes('class="container premium-bottom-cta"')) errors.push("/dakwerken/limburg/: premium conversion CTAs are incomplete");
 
   const projects = await fetch(new URL(`projecten/?validation=${Date.now()}`, baseUrl), { cache: "no-store" });
   if (projects.status !== 404) errors.push(`/projecten/: expected HTTP 404, received ${projects.status}`);

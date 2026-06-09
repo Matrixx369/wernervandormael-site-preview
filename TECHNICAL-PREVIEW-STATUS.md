@@ -72,3 +72,14 @@ Start from the approved mockup and create a visual regression checklist before
 editing. Preserve the current URLs, service-page content, metadata, schema,
 internal links, images and legal pages. Review desktop and mobile screenshots
 against the mockup before approving any production deployment.
+
+## Premium Service-Page Pattern Test
+
+The isolated `/dakwerken/limburg/` test establishes a possible later rollout
+pattern: a compact image hero with visible CTAs, overlapping three-item trust
+strip, balanced text/checklist and image section, three compact attention
+cards, clear related-service links, refined FAQ rows, and a three-action bottom
+CTA. Reuse existing optimized images with honest alt text and do not repeat the
+same exact crop twice on one page. On mobile, keep the H1 controlled, stack
+trust and attention cards, use tap-friendly related links and FAQ rows, and
+make CTA buttons full width.

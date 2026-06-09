@@ -83,3 +83,9 @@ CTA. Reuse existing optimized images with honest alt text and do not repeat the
 same exact crop twice on one page. On mobile, keep the H1 controlled, stack
 trust and attention cards, use tap-friendly related links and FAQ rows, and
 make CTA buttons full width.
+
+Final pattern details: keep the hero crop focused on real work while preserving
+clear text space, use restrained same-size trust icons, keep hero and practical
+CTAs at a consistent tap-friendly height, and retain three equal-width actions
+in the bottom CTA. Mobile must avoid horizontal overflow, surface hero actions
+early, stack the trust strip cleanly, and keep content images compact.

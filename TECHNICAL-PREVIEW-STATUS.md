@@ -73,10 +73,10 @@ editing. Preserve the current URLs, service-page content, metadata, schema,
 internal links, images and legal pages. Review desktop and mobile screenshots
 against the mockup before approving any production deployment.
 
-## Premium Service-Page Pattern Test
+## Premium Service-Page Pattern
 
-The isolated `/dakwerken/limburg/` test establishes a possible later rollout
-pattern: a compact image hero with visible CTAs, overlapping three-item trust
+The approved premium pattern is used across all seven service pages: a compact
+image hero with visible CTAs, overlapping three-item trust
 strip, balanced text/checklist and image section, three compact attention
 cards, clear related-service links, refined FAQ rows, and a three-action bottom
 CTA. Reuse existing optimized images with honest alt text and do not repeat the

@@ -82,8 +82,8 @@ const pages = [
     image: "plat-dak-roofing-epdm-vandormael-werner.jpg",
     alt: "Plat dak met roofing of EPDM-afwerking door Vandormael Werner",
     listHeading: "Voor welke werken aan platte daken kan u terecht?",
-    practical: "Vandormael Werner voert werken uit aan platte daken in de ruime regio Limburg. Afhankelijk van de bestaande opbouw en het probleem kan het gaan om een herstelling, vernieuwing van dakdelen of afwerking met roofing of EPDM waar dat van toepassing is.",
-    examples: ["Herstellingen aan platte daken", "Roofing of EPDM-afwerking waar van toepassing", "Controle van randen en aansluitingen", "Problemen met waterinsijpeling", "Renovatie of vernieuwing van dakdelen", "Afwerking rond dakranden en details"],
+    practical: "Bij een plat dak is een goede waterdichte afwerking belangrijk. Werner bekijkt de dakbedekking, randen, afvoeren en aansluitingen, zodat duidelijk wordt of een herstelling of ruimere aanpak nodig is.",
+    examples: ["Herstelling van platte daken", "Vernieuwing van dakbedekking", "Controle van waterafvoer", "Aansluitingen aan muren of opstanden", "Dakranden en afwerking", "Combinatie met isolatie"],
     attentionHeading: "Waar wordt op gelet bij een plat dak?",
     attention: "Naast het dakvlak worden ook randen, naden, aansluitingen en de waterafvoer bekeken. Water dat blijft staan of een beschadiging rond een detail kan wijzen op een probleem dat verder onderzocht moet worden.",
     related: [0, 3, 4],
@@ -103,9 +103,9 @@ const pages = [
     intro: "Dakisolatie kan een belangrijk onderdeel zijn van een dakrenovatie. Ze helpt om warmteverlies via het dak te beperken en kan het comfort in de woning verbeteren. Werner bekijkt hoe de isolatie past bij het hellende of platte dak en de werken die nodig zijn.",
     image: "dakisolatie-hellend-dak-limburg.jpg",
     alt: "Dakisolatie bij renovatie van een hellend dak in Limburg",
-    listHeading: "Voor welke dakisolatiewerken kan u contact opnemen?",
-    practical: "Dakisolatie wordt vaak gecombineerd met andere dakwerken. Voor de plaatsing wordt eerst naar de bestaande dakopbouw gekeken, zodat de isolatie en afwerking correct op elkaar aansluiten.",
-    examples: ["Dakisolatie bij renovatie van een hellend dak", "Isolatie bij werken aan een plat dak", "Bekijken van de bestaande dakopbouw", "Combinatie met dakwerken of herstellingen", "Correcte afwerking rond aansluitingen", "Documenten voor een mogelijke premieaanvraag waar relevant"],
+    listHeading: "Voor welke dakisolatie kan u contact opnemen?",
+    practical: "Dakisolatie wordt vaak bekeken bij renovatie van een hellend of plat dak. De juiste aanpak hangt af van de bestaande dakopbouw, de staat van het dak en de werken die eventueel tegelijk uitgevoerd worden.",
+    examples: ["Dakisolatie bij renovatie", "Isolatie van hellende daken", "Isolatie van platte daken", "Combinatie met dakherstelling", "Controle van bestaande dakopbouw", "Praktische bespreking van de mogelijkheden"],
     attentionHeading: "Waar wordt op gelet bij dakisolatie?",
     attention: "De bestaande dakopbouw, mogelijke vochtproblemen en de aansluitingen rond de isolatie zijn belangrijke aandachtspunten. Ook ventilatie wordt, waar relevant, in de volledige dakopbouw bekeken. Een correcte uitvoering is vooral belangrijk wanneer isolatie samen met een dakrenovatie geplaatst wordt.",
     related: [0, 1, 2],
@@ -150,9 +150,9 @@ const pages = [
     image: "zinkwerken-dakgoot-limburg.jpg",
     alt: "Zinkwerk en dakgoot bij dakrenovatie in Limburg",
     listHeading: "Voor welke zink-, koper- en loodwerken kan u terecht?",
-    practical: "Deze materialen worden gebruikt voor de afwerking en waterafvoer rond verschillende dakdelen. De nodige ingreep wordt afgestemd op het bestaande dak en kan zowel deel zijn van een renovatie als van een gerichte herstelling.",
-    examples: ["Dakgoten", "Afwerking aan dakranden", "Aansluitingen", "Loodslabben of loodafwerking waar van toepassing", "Zinkwerk rond dakdetails", "Herstellingen aan bestaande afwerking"],
-    attentionHeading: "Waar wordt op gelet bij dakafwerking en waterafvoer?",
+    practical: "Zink-, koper- en loodwerken zitten vaak in de details van een dak. Denk aan goten, randen, aansluitingen, afvoeren en afwerking rond schouwen of muren. Een correcte uitvoering helpt om water goed af te voeren.",
+    examples: ["Dakgoten en afvoeren", "Zinken afwerking", "Loodwerken aan aansluitingen", "Koperwerken waar voorzien", "Afwerking rond schouwen of muren", "Herstelling van bestaande aansluitingen"],
+    attentionHeading: "Waar wordt op gelet bij zink-, koper- en loodwerken?",
     attention: "Regenwater moet vlot afgevoerd worden en aansluitingen moeten waterdicht blijven. Daarom wordt gelet op de staat van goten, randen, slabben en details rond andere dakelementen. Een nette aansluiting helpt om problemen op moeilijk zichtbare plaatsen te voorkomen.",
     related: [0, 1, 4],
     faq: [
@@ -167,14 +167,14 @@ const pages = [
     url: "/kleinere-dakwerken/limburg/",
     title: "Kleinere dakwerken Limburg | Vandormael Werner",
     description: "Ook voor kleinere dakwerken en klussen in en rond de woning kan u contact opnemen met Vandormael Werner uit Wellen, actief in de ruime regio Limburg.",
-    h1: "Kleinere dakwerken en klussen in Limburg",
+    h1: "Kleinere dakwerken in Limburg",
     intro: "Naast grotere dakwerken kan u bij Vandormael Werner ook terecht voor kleinere dakwerken en praktische herstellingen. Deze aanvullende service blijft vooral gericht op beperkte werken aan of rond het dak en kleine ingrepen in en rond de woning.",
     image: "kleinere-dakwerken-klussen-vandormael-werner.jpg",
     alt: "Kleinere dakwerken en afwerking aan woning door Vandormael Werner",
-    listHeading: "Voor welke kleinere werken kan u contact opnemen?",
-    practical: "Niet elk probleem vraagt een volledige dakrenovatie. Een beperkte beschadiging, een losse afwerking of een klein probleem aan een goot kan best tijdig bekeken worden. Stuur enkele foto's door om te bespreken of Werner u ermee kan helpen.",
-    examples: ["Kleine dakherstellingen", "Afwerking rond dak of goot", "Kleine aansluitingen", "Controle van beperkte schade", "Praktische werken in en rond de woning waar relevant", "Kleine ingrepen die best niet blijven liggen"],
-    attentionHeading: "Hoe worden kleinere werken bekeken?",
+    listHeading: "Voor welke kleinere dakwerken kan u contact opnemen?",
+    practical: "Niet elk dakwerk is een groot project. Soms gaat het om een kleine herstelling, een afwerking, een controle of een praktisch werk rond dak, woning of bijgebouw. Werner bekijkt wat mogelijk is en bespreekt de aanpak.",
+    examples: ["Kleine herstellingen", "Afwerking rond dak of bijgebouw", "Praktische werken rond woning of dak", "Controle van dakdelen", "Kleine aanpassingen", "Te bespreken volgens de situatie"],
+    attentionHeading: "Waar wordt op gelet bij kleinere dakwerken?",
     attention: "Ook bij een klein werk is het belangrijk om eerst de oorzaak en omvang te kennen. Werner bekijkt of het om een afgebakende ingreep gaat en of ze praktisch gecombineerd kan worden met andere dakgerelateerde werken.",
     related: [0, 4, 5],
     faq: [
@@ -236,11 +236,11 @@ function contactCta(servicePage = false) {
   const copy = servicePage
     ? "Heeft u een vraag over deze werken? Bel Werner, stuur een WhatsApp-bericht of stuur eventueel enkele foto's via WhatsApp of e-mail."
     : "Heeft u een vraag? Bel Werner, stuur een WhatsApp-bericht of stuur een e-mail.";
-  return `<section class="compact-cta-section"><div class="container compact-cta"><div><span class="kicker">Contact</span><h2>${heading}</h2><p>${copy}</p></div><div class="cta-actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline" href="mailto:${email}">Stuur een e-mail</a></div></div></section>`;
+  return `<section class="compact-cta-section"><div class="container compact-cta"><div><span class="kicker">Contact</span><h2>${heading}</h2><p>${copy}</p></div><div class="cta-actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline visible-email-cta" href="mailto:${email}"><span>Stuur een e-mail</span><small>${email}</small></a></div></div></section>`;
 }
 
 function homeContact() {
-  return `<section class="dark home-contact" id="contact"><div class="container home-contact-inner"><span class="kicker">Contact</span><h2>Contact opnemen met Vandormael Werner</h2><p>Wilt u een dakwerk bespreken? Bel Werner of stuur een WhatsApp-bericht. U kan ook enkele foto's via e-mail of WhatsApp meesturen, zodat de situatie eerst bekeken kan worden.</p><div class="cta-actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline-light" href="mailto:${email}">Stuur een e-mail</a></div></div></section>`;
+  return `<section class="dark home-contact" id="contact"><div class="container home-contact-inner"><span class="kicker">Contact</span><h2>Contact opnemen met Vandormael Werner</h2><p>Wilt u een dakwerk bespreken? Bel Werner of stuur een WhatsApp-bericht. U kan ook enkele foto's via e-mail of WhatsApp meesturen, zodat de situatie eerst bekeken kan worden.</p><div class="cta-actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline-light visible-email-cta" href="mailto:${email}"><span>Stuur een e-mail</span><small>${email}</small></a></div></div></section>`;
 }
 
 function breadcrumbs(page) {
@@ -280,34 +280,83 @@ function homeBody(page) {
   <section><div class="container narrow"><div class="section-head"><div><span class="kicker">Veelgestelde vragen</span><h2>Veelgestelde vragen over dakwerken</h2></div></div>${faqBlock(homeFaq)}</div></section>${homeContact()}</main>`;
 }
 
-function serviceBody(page) {
-  return `<main>${breadcrumbs(page)}<section class="page-hero service-hero"><div class="container"><span class="eyebrow">Dakwerker uit Limburg</span><h1>${page.h1}</h1><p>${page.intro}</p><div class="actions"><a class="btn btn-red" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a></div></div></section>
-  <section><div class="container split"><div><span class="kicker">Praktische uitleg</span><h2>${page.listHeading}</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="text-link" href="/contact/">Bespreek uw dakwerk</a></div><figure class="photo">${img(page.image, page.alt)}</figure></div></section>
-  <section class="soft service-attention-section"><div class="container narrow service-attention"><span class="kicker">Aandachtspunten</span><h2>${page.attentionHeading}</h2><p>${page.attention}</p></div></section>
-  <section><div class="container"><div class="section-head"><div><span class="kicker">Gerelateerde diensten</span><h2>Gerelateerde dakwerken</h2></div></div><div class="related">${page.related.map(i => `<a href="${services[i][1]}">${services[i][0]} in Limburg</a>`).join("")}</div></div></section>
-  <section class="soft"><div class="container narrow"><div class="section-head"><div><span class="kicker">Veelgestelde vragen</span><h2>${serviceFaqHeading(page)}</h2></div></div>${faqBlock(page.faq)}</div></section>${contactCta(true)}</main>`;
-}
+const premiumServiceContent = {
+  "/dakwerken/limburg/": {
+    heroImage: "werner-vandormael-dakwerker-limburg.jpg",
+    heroAlt: "Werner Vandormael aan het werk als dakwerker in Limburg",
+    heroIntro: "Vandormael Werner voert dakwerken uit in de ruime regio Limburg. Van herstellingen en renovatie tot dakisolatie, zink-, koper- en loodwerken en kleinere dakwerken. U neemt rechtstreeks contact op met Werner en krijgt duidelijke uitleg over de mogelijke aanpak.",
+    practicalImage: "hellend-dak-vandormael-werner-limburg.jpg",
+    practicalAlt: "Hellend dak uitgevoerd door Vandormael Werner in Limburg",
+    attentionItems: [["Staat van het dak", "Er wordt gekeken naar dakbedekking, aansluitingen, randen en mogelijke schade."], ["Waterdichte afwerking", "Goten, randen en aansluitingen zijn belangrijk om vochtproblemen te voorkomen."], ["Logische aanpak", "Soms volstaat een kleine herstelling, soms is een bredere aanpak verstandiger."]],
+    related: [1, 2, 3, 4, 5],
+  },
+  "/hellende-daken/limburg/": {
+    heroIntro: "Voor werken aan hellende daken kan u terecht bij Vandormael Werner. Het kan gaan om dakpannen, leien, aansluitingen, herstellingen of een ruimere renovatie. Werner bekijkt de situatie praktisch en bespreekt wat mogelijk is.",
+    practicalImage: "dakherstelling-regio-limburg.jpg",
+    practicalAlt: "Werken aan een hellend dak door Vandormael Werner",
+    attentionItems: [["Dakbedekking", "Er wordt gekeken naar dakpannen, leien, nokken en zichtbare slijtage."], ["Aansluitingen", "Randen, goten, schouwen en dakdoorvoeren vragen extra aandacht."], ["Opbouw van het dak", "Bij renovatie wordt bekeken of isolatie of onderdak mee besproken moet worden."]],
+    related: [0, 3, 4, 5, 2],
+  },
+  "/platte-daken/limburg/": {
+    heroIntro: "Voor platte daken, herstellingen en waterdichte afwerking kan u Vandormael Werner contacteren. Platte daken vragen een correcte opbouw, goede aansluitingen en voldoende aandacht voor waterafvoer.",
+    practicalImage: "zinkwerken-dakgoot-limburg.jpg",
+    practicalAlt: "Dakrand en waterafvoer bij dakwerken door Vandormael Werner",
+    attentionItems: [["Waterafvoer", "Stilstaand water kan problemen veroorzaken. Daarom worden afvoeren en helling bekeken."], ["Dakbedekking", "Scheuren, blazen of loskomende delen kunnen wijzen op slijtage."], ["Randen en aansluitingen", "Opstanden, dakranden en muuraansluitingen zijn belangrijk voor waterdichtheid."]],
+    related: [0, 3, 4, 5, 1],
+  },
+  "/dakisolatie/limburg/": {
+    heroIntro: "Dakisolatie kan helpen om warmteverlies te beperken en het comfort in de woning te verbeteren. Vandormael Werner bekijkt wat mogelijk is binnen de bestaande dakopbouw en bespreekt een praktische aanpak.",
+    practicalImage: "hellend-dak-vandormael-werner-limburg.jpg",
+    practicalAlt: "Hellend dak waarbij dakisolatie kan worden gecombineerd met renovatie",
+    attentionItems: [["Bestaande dakopbouw", "Eerst wordt bekeken hoe het dak vandaag is opgebouwd."], ["Combinatie met dakwerken", "Isolatie wordt vaak logisch gecombineerd met herstelling of renovatie."], ["Vocht en ventilatie", "Een correcte opbouw is belangrijk om vochtproblemen te vermijden."]],
+    related: [0, 1, 2, 4, 6],
+  },
+  "/dakherstellingen/limburg/": {
+    practicalImage: "werner-vandormael-dakwerker-limburg.jpg",
+    practicalAlt: "Werner Vandormael aan het werk tijdens dakwerken",
+    attentionItems: [["Oorzaak van het probleem", "Niet alleen de zichtbare schade telt. Ook aansluitingen en dakbedekking worden bekeken."], ["Risico op vocht", "Water kan verder onder het dak raken wanneer schade blijft liggen."], ["Herstelling of ruimere aanpak", "Soms volstaat een kleine herstelling, soms is een grotere ingreep logischer."]],
+    related: [0, 1, 2, 5, 6],
+  },
+  "/zinkwerken-koperwerken-loodwerken/limburg/": {
+    heroIntro: "Voor afwerking in zink, koper en lood kan u Vandormael Werner contacteren. Deze werken vragen nauwkeurige aansluitingen, correcte plaatsing en aandacht voor waterafvoer rond het dak.",
+    practicalImage: "dakherstelling-regio-limburg.jpg",
+    practicalAlt: "Dakwerken met aandacht voor aansluitingen en afwerking",
+    attentionItems: [["Waterafvoer", "Goten en afvoeren moeten logisch en betrouwbaar werken."], ["Aansluitingen", "Details rond muren, schouwen en randen vragen nauwkeurige afwerking."], ["Materiaalkeuze", "De aanpak hangt af van de bestaande situatie en het gebruikte materiaal."]],
+    related: [0, 1, 2, 4, 6],
+  },
+  "/kleinere-dakwerken/limburg/": {
+    heroIntro: "Ook voor kleinere dakwerken of praktische klussen rond dak en woning kan u Vandormael Werner contacteren. De werken worden per situatie bekeken en duidelijk besproken.",
+    practicalImage: "werner-vandormael-dakwerker-limburg.jpg",
+    practicalAlt: "Werner Vandormael aan het werk aan een dak",
+    attentionItems: [["Omvang van het werk", "Eerst wordt bekeken of het om een kleine ingreep of groter dakwerk gaat."], ["Praktische haalbaarheid", "De aanpak hangt af van bereikbaarheid, materiaal en bestaande toestand."], ["Duidelijke afspraak", "Voor kleine werken is duidelijke communicatie vooraf extra belangrijk."]],
+    related: [0, 4, 1, 2, 5],
+  },
+};
 
-function premiumGeneralServiceBody(page) {
+function premiumServiceBody(page) {
+  const content = premiumServiceContent[page.url];
   const trustItems = [
     ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12zm0-9a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>', "Lokale dakwerker", "Rechtstreeks contact met Werner zelf."],
     ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.7 6.3 3-3a5 5 0 0 0-6.4 6.4L3 18v3h3l8.3-8.3a5 5 0 0 0 6.4-6.4l-3 3-3-3z"/></svg>', "Dakherstelling &amp; dakisolatie", "Voor kleinere werken én grotere dakprojecten."],
     ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v13H8l-4 4V4zm4 5h8V7H8v2zm0 4h6v-2H8v2z"/></svg>', "Duidelijke communicatie", "Heldere afspraken voor dakwerken, isolatie en herstellingen."],
   ];
-  const attentionItems = [
-    ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3V11zm2 .9V19h2v-6h10v6h2v-7.1l-7-6.2-7 6.2z"/></svg>', "Staat van het dak", "Er wordt gekeken naar dakbedekking, aansluitingen, randen en mogelijke schade."],
-    ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s7 7.1 7 12a7 7 0 1 1-14 0C5 9.1 12 2 12 2zm0 4.1C9.9 8.7 7 12.2 7 14a5 5 0 0 0 10 0c0-1.8-2.9-5.3-5-7.9z"/></svg>', "Waterdichte afwerking", "Goten, randen en aansluitingen zijn belangrijk om vochtproblemen te voorkomen."],
-    ['<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 16.2-3.7-3.7-1.4 1.4 5.1 5.1L20 8.5l-1.4-1.4-9.1 9.1z"/></svg>', "Logische aanpak", "Soms volstaat een kleine herstelling, soms is een bredere aanpak verstandiger."],
+  const attentionIcons = [
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3V11zm2 .9V19h2v-6h10v6h2v-7.1l-7-6.2-7 6.2z"/></svg>',
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s7 7.1 7 12a7 7 0 1 1-14 0C5 9.1 12 2 12 2zm0 4.1C9.9 8.7 7 12.2 7 14a5 5 0 0 0 10 0c0-1.8-2.9-5.3-5-7.9z"/></svg>',
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 16.2-3.7-3.7-1.4 1.4 5.1 5.1L20 8.5l-1.4-1.4-9.1 9.1z"/></svg>',
   ];
-  const related = [1, 2, 3, 4, 5];
+  const attentionItems = content.attentionItems.map(([title, text], index) => [attentionIcons[index], title, text]);
+  const heroImage = content.heroImage || page.image;
+  const heroAlt = content.heroAlt || page.alt;
+  const heroIntro = content.heroIntro || page.intro;
   return `<main class="premium-service-page">${breadcrumbs(page)}
-  <section class="premium-service-hero"><div class="premium-service-hero-bg">${img("werner-vandormael-dakwerker-limburg.jpg", "Werner Vandormael aan het werk als dakwerker in Limburg", "", true)}</div><div class="container premium-service-hero-inner"><span class="eyebrow">Dakwerker uit Limburg</span><h1>Algemene dakwerken in Limburg</h1><p>Vandormael Werner voert dakwerken uit in de ruime regio Limburg. Van herstellingen en renovatie tot dakisolatie, zink-, koper- en loodwerken en kleinere dakwerken. U neemt rechtstreeks contact op met Werner en krijgt duidelijke uitleg over de mogelijke aanpak.</p><div class="actions"><a class="btn btn-red" href="tel:${phone}"><span aria-hidden="true">☎</span>Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener"><span aria-hidden="true">◉</span>WhatsApp Werner</a></div></div></section>
+  <section class="premium-service-hero"><div class="premium-service-hero-bg">${img(heroImage, heroAlt, "", true)}</div><div class="container premium-service-hero-inner"><span class="eyebrow">Dakwerker uit Limburg</span><h1>${page.h1}</h1><p>${heroIntro}</p><div class="actions"><a class="btn btn-red" href="tel:${phone}"><span aria-hidden="true">☎</span>Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener"><span aria-hidden="true">◉</span>WhatsApp Werner</a></div></div></section>
   <section class="premium-trust"><div class="container premium-trust-grid">${trustItems.map(([icon, title, text]) => `<article><span class="premium-trust-icon" aria-hidden="true">${icon}</span><div><strong>${title}</strong><p>${text}</p></div></article>`).join("")}</div></section>
-  <section class="premium-practical"><div class="container split premium-practical-grid"><div><span class="kicker">Praktische uitleg</span><h2>Voor welke dakwerken kan u contact opnemen?</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="btn btn-red" href="/contact/">Bespreek uw dakwerk <span aria-hidden="true">→</span></a></div><figure class="photo premium-practical-photo">${img("hellend-dak-vandormael-werner-limburg.jpg", "Hellend dak uitgevoerd door Vandormael Werner in Limburg")}</figure></div></section>
-  <section class="soft premium-attention-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Aandachtspunten</span><h2>Waar wordt op gelet bij algemene dakwerken?</h2><p>${page.attention}</p></div><div class="premium-attention-grid">${attentionItems.map(([icon, title, text], index) => `<article><div class="premium-attention-meta"><span class="premium-attention-icon">${icon}</span><b>0${index + 1}</b></div><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></div></section>
-  <section class="premium-related-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Gerelateerde diensten</span><h2>Gerelateerde dakwerken</h2></div><div class="premium-related">${related.map(i => `<a href="${services[i][1]}"><strong>${services[i][0]}</strong><span aria-hidden="true">→</span></a>`).join("")}</div></div></section>
-  <section class="soft premium-faq-section"><div class="container narrow"><div class="premium-section-heading"><span class="kicker">Veelgestelde vragen</span><h2>Veelgestelde vragen over dakwerken</h2></div>${faqBlock(page.faq)}</div></section>
-  <section class="premium-bottom-cta-section"><div class="container premium-bottom-cta"><div><span class="kicker">Contact</span><h2>Uw dakwerk bespreken?</h2><p>Heeft u een vraag over deze werken? Bel Werner, stuur een WhatsApp-bericht of stuur eventueel enkele foto's via WhatsApp of e-mail.</p></div><div class="cta-actions"><a class="btn btn-white" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline-light" href="mailto:${email}">Stuur een e-mail</a></div></div></section></main>`;
+  <section class="premium-practical"><div class="container split premium-practical-grid"><div><span class="kicker">Praktische uitleg</span><h2>${page.listHeading}</h2><p>${page.practical}</p><ul class="checks">${page.examples.map(x => `<li>${x}</li>`).join("")}</ul><a class="btn btn-red" href="/contact/">Bespreek uw dakwerk <span aria-hidden="true">→</span></a></div><figure class="photo premium-practical-photo">${img(content.practicalImage, content.practicalAlt)}</figure></div></section>
+  <section class="soft premium-attention-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Aandachtspunten</span><h2>${page.attentionHeading}</h2><p>${page.attention}</p></div><div class="premium-attention-grid">${attentionItems.map(([icon, title, text], index) => `<article><div class="premium-attention-meta"><span class="premium-attention-icon">${icon}</span><b>0${index + 1}</b></div><h3>${title}</h3><p>${text}</p></article>`).join("")}</div></div></section>
+  <section class="premium-related-section"><div class="container"><div class="premium-section-heading"><span class="kicker">Gerelateerde diensten</span><h2>Gerelateerde dakwerken</h2></div><div class="premium-related">${content.related.map(i => `<a href="${services[i][1]}"><strong>${services[i][0]}</strong><span aria-hidden="true">→</span></a>`).join("")}</div></div></section>
+  <section class="soft premium-faq-section"><div class="container narrow"><div class="premium-section-heading"><span class="kicker">Veelgestelde vragen</span><h2>${serviceFaqHeading(page)}</h2></div>${faqBlock(page.faq)}</div></section>
+  <section class="premium-bottom-cta-section"><div class="container premium-bottom-cta"><div><span class="kicker">Contact</span><h2>Uw dakwerk bespreken?</h2><p>Heeft u een vraag over deze werken? Bel Werner, stuur een WhatsApp-bericht of stuur eventueel enkele foto's via WhatsApp of e-mail.</p></div><div class="cta-actions"><a class="btn btn-white" href="tel:${phone}">Bel Werner</a><a class="btn btn-outline-light" href="${whatsapp}" target="_blank" rel="noopener">WhatsApp Werner</a><a class="btn btn-outline-light premium-email-cta" href="mailto:${email}"><span>Stuur een e-mail</span><small>${email}</small></a></div></div></section></main>`;
 }
 
 function aboutBody(page) {
@@ -358,7 +407,7 @@ function schema(page) {
 }
 
 function render(page) {
-  const body = page.type === "home" ? homeBody(page) : page.type === "about" ? aboutBody(page) : page.type === "contact" ? contactBody(page) : page.type === "privacy" ? privacyBody(page) : page.type === "terms" ? termsBody(page) : page.url === "/dakwerken/limburg/" ? premiumGeneralServiceBody(page) : serviceBody(page);
+  const body = page.type === "home" ? homeBody(page) : page.type === "about" ? aboutBody(page) : page.type === "contact" ? contactBody(page) : page.type === "privacy" ? privacyBody(page) : page.type === "terms" ? termsBody(page) : premiumServiceBody(page);
   const depth = page.url === "/" ? 0 : page.url.split("/").filter(Boolean).length;
   const prefix = depth ? "../".repeat(depth) : "";
   return `<!doctype html><html lang="nl-BE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${page.title}</title><meta name="description" content="${esc(page.description)}"><meta name="robots" content="index,follow"><link rel="canonical" href="${domain}${page.url}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.description)}"><meta property="og:url" content="${domain}${page.url}"><meta property="og:image" content="${domain}/assets/images/optimized/${page.image}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(page.title)}"><meta name="twitter:description" content="${esc(page.description)}"><meta name="twitter:image" content="${domain}/assets/images/optimized/${page.image}"><meta name="theme-color" content="#b01822"><link rel="manifest" href="${prefix}site.webmanifest"><link rel="stylesheet" href="${prefix}assets/css/style.css"><script type="application/ld+json">${schema(page)}</script><script defer src="${prefix}assets/js/main.js"></script></head><body>${header()}${body}${footer()}</body></html>`

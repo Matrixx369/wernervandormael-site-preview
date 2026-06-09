@@ -37,6 +37,9 @@ async function validate() {
     if (!/^<strong>Vandormael Werner<\/strong><span>Plattestraat 33<\/span><span>3830 Wellen<\/span><span>België<\/span>$/.test(footerAddress)) errors.push(`${route}: footer address structure is incorrect`);
     if ((footerLinks.match(/<a /g) || []).length !== 3) errors.push(`${route}: footer contact links are not separated`);
     if (html.includes("footer-contact-divider") || footerAddress.includes("·")) errors.push(`${route}: stray footer separator remains`);
+    for (const mailLink of html.matchAll(/<a[^>]+href="mailto:[^"]+"[^>]*>([\s\S]*?)<\/a>/g)) {
+      if (!mailLink[1].includes("werner.vandormael1@gmail.com")) errors.push(`${route}: mailto link does not visibly show the email address`);
+    }
   }
 
   const home = pages.get("/");
@@ -57,8 +60,11 @@ async function validate() {
     }
     if (!html.includes('<span class="eyebrow">Dakwerker uit Limburg</span>')) errors.push(`${route}: service hero badge is incorrect`);
     if (!html.includes("<h2>Gerelateerde dakwerken</h2>") || !html.includes("Veelgestelde vragen over ")) errors.push(`${route}: refined section headings are missing`);
-    const ctaActions = html.match(/<div class="container (?:compact-cta|premium-bottom-cta)">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
+    if (!html.includes('class="premium-service-page"') || (html.match(/class="premium-trust-icon"/g) || []).length !== 3 || (html.match(/class="premium-attention-icon"/g) || []).length !== 3) errors.push(`${route}: premium service pattern is incomplete`);
+    if (!html.includes(">Bespreek uw dakwerk <span")) errors.push(`${route}: practical CTA is incomplete`);
+    const ctaActions = html.match(/<div class="container premium-bottom-cta">[\s\S]*?<div class="cta-actions">([\s\S]*?)<\/div>/)?.[1] || "";
     if ((ctaActions.match(/<a class="btn /g) || []).length !== 3) errors.push(`${route}: service CTA buttons are not separated`);
+    if (!ctaActions.includes("werner.vandormael1@gmail.com")) errors.push(`${route}: email CTA does not visibly show the address`);
   }
   const general = pages.get("/dakwerken/limburg/");
   if (!general.includes('class="premium-service-page"') || !general.includes('class="premium-service-hero"')) errors.push("/dakwerken/limburg/: premium test layout is missing");

@@ -299,8 +299,8 @@ const premiumServiceContent = {
   },
   "/platte-daken/limburg/": {
     heroIntro: "Voor platte daken, herstellingen en waterdichte afwerking kan u Vandormael Werner contacteren. Platte daken vragen een correcte opbouw, goede aansluitingen en voldoende aandacht voor waterafvoer.",
-    practicalImage: "zinkwerken-dakgoot-limburg.jpg",
-    practicalAlt: "Dakrand en waterafvoer bij dakwerken door Vandormael Werner",
+    practicalImage: "plat-dak-dakbedekking-isolatie.jpg",
+    practicalAlt: "Plat dak met dakbedekking en isolatie tijdens dakwerken",
     attentionItems: [["Waterafvoer", "Stilstaand water kan problemen veroorzaken. Daarom worden afvoeren en helling bekeken."], ["Dakbedekking", "Scheuren, blazen of loskomende delen kunnen wijzen op slijtage."], ["Randen en aansluitingen", "Opstanden, dakranden en muuraansluitingen zijn belangrijk voor waterdichtheid."]],
     related: [0, 3, 4, 5, 1],
   },
@@ -326,8 +326,8 @@ const premiumServiceContent = {
   },
   "/kleinere-dakwerken/limburg/": {
     heroIntro: "Ook voor kleinere dakwerken of praktische klussen rond dak en woning kan u Vandormael Werner contacteren. De werken worden per situatie bekeken en duidelijk besproken.",
-    practicalImage: "woning-afgewerkte-dakdelen-bijgebouw.jpg",
-    practicalAlt: "Woning met afgewerkte dakdelen en bijgebouw",
+    practicalImage: "renovatiewerk-dakstructuur-bijgebouw.jpg",
+    practicalAlt: "Renovatiewerk aan dakstructuur en bijgebouw",
     attentionItems: [["Omvang van het werk", "Eerst wordt bekeken of het om een kleine ingreep of groter dakwerk gaat."], ["Praktische haalbaarheid", "De aanpak hangt af van bereikbaarheid, materiaal en bestaande toestand."], ["Duidelijke afspraak", "Voor kleine werken is duidelijke communicatie vooraf extra belangrijk."]],
     related: [0, 4, 1, 2, 5],
   },

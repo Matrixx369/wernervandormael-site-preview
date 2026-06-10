@@ -1,11 +1,11 @@
 # Technical Preview Status
 
-Status date: 8 June 2026
+Status date: 10 June 2026
 
 This branch remains a technical SEO/GEO review state. The premium service-page
-visual direction is approved as the current model and has been applied to all
-seven service pages. The homepage, contact page and over page are not yet fully
-harmonized with that premium service-page style.
+layout is approved across all seven service pages. These pages are considered
+frozen for the current preview state. The homepage, contact page and over page
+are not yet fully harmonized with that premium service-page style.
 
 ## Preview
 
@@ -35,9 +35,33 @@ harmonized with that premium service-page style.
 - `/algemene-voorwaarden/`
 
 The site currently generates 12 public pages and `sitemap.xml` contains 12
-URLs. The Projecten page remains removed and the homepage project section is
-postponed. Existing images remain preserved for possible later project or
-gallery use.
+URLs. The Projecten page remains removed and must continue to return 404. A
+homepage project or recent-work visual section may remain present, but there is
+no separate Projecten page. Existing images remain preserved for possible later
+project or gallery use.
+
+## Approved Service-Page State
+
+The seven service pages now use the approved premium service-page pattern and
+are considered frozen for the current preview state:
+
+- `/dakwerken/limburg/`
+- `/hellende-daken/limburg/`
+- `/platte-daken/limburg/`
+- `/dakisolatie/limburg/`
+- `/dakherstellingen/limburg/`
+- `/zinkwerken-koperwerken-loodwerken/limburg/`
+- `/kleinere-dakwerken/limburg/`
+
+The approved pattern includes a compact image hero with visible CTAs, an
+overlapping three-item trust strip, a practical explanation section with a
+service-specific image, three compact attention cards, related-service links,
+an FAQ section, and a three-action bottom CTA.
+
+The practical-section image review is complete and images have been updated
+where needed. Further service-page changes should be avoided unless a clear
+bug, broken layout, incorrect image, factual issue, SEO issue, validation issue,
+or mobile issue is identified.
 
 ## Preserved Technical Assets
 
@@ -59,12 +83,15 @@ gallery use.
 ## Known Issues And Deferred Work
 
 - The premium service-page visual direction is approved as the current model
-  across all seven service pages.
+  across all seven service pages. These pages are frozen for the current
+  preview state.
 - The homepage, contact page and over page are not yet fully harmonized with
   the premium service-page style.
-- Practical-section image selection across the service pages is still pending
-  review.
-- The Projecten page and homepage project section are postponed.
+- The practical-section image review across all seven service pages is
+  complete.
+- The Projecten page remains removed and must stay unavailable. A homepage
+  project or recent-work visual section may remain present without a separate
+  Projecten page.
 - The contact forms use a `mailto:` fallback rather than a verified form
   delivery backend.
 - Production hosting redirects for non-`/limburg/` legacy service URLs still
@@ -75,10 +102,11 @@ gallery use.
 ## Later Design Round
 
 Use the approved premium service-page pattern as the current model when
-harmonizing the homepage, contact page and over page. Review practical-section
-image choices and compare desktop and mobile screenshots before approving any
-production deployment. Preserve the current URLs, service-page content,
-metadata, schema, internal links, images and legal pages.
+harmonizing the homepage, contact page and over page. Avoid further
+micro-polishing of the approved service pages unless a clear issue is found.
+Compare desktop and mobile screenshots before approving any production
+deployment. Preserve the current URLs, service-page content, metadata, schema,
+internal links, images and legal pages.
 
 ## Premium Service-Page Pattern
 

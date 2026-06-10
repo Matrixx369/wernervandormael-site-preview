@@ -299,8 +299,8 @@ const premiumServiceContent = {
   },
   "/platte-daken/limburg/": {
     heroIntro: "Voor platte daken, herstellingen en waterdichte afwerking kan u Vandormael Werner contacteren. Platte daken vragen een correcte opbouw, goede aansluitingen en voldoende aandacht voor waterafvoer.",
-    practicalImage: "plat-dak-dakbedekking-isolatie.jpg",
-    practicalAlt: "Plat dak met dakbedekking en isolatie tijdens dakwerken",
+    practicalImage: "werkman-werken-plat-dak.jpg",
+    practicalAlt: "Werkman met gereedschap tijdens werken aan een plat dak",
     attentionItems: [["Waterafvoer", "Stilstaand water kan problemen veroorzaken. Daarom worden afvoeren en helling bekeken."], ["Dakbedekking", "Scheuren, blazen of loskomende delen kunnen wijzen op slijtage."], ["Randen en aansluitingen", "Opstanden, dakranden en muuraansluitingen zijn belangrijk voor waterdichtheid."]],
     related: [0, 3, 4, 5, 1],
   },

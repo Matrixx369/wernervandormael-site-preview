@@ -76,7 +76,10 @@ for (const url of pages) {
   titles.add(title);
   descriptions.add(description);
 
-  for (const required of ['rel="canonical"', 'name="robots" content="index,follow"', 'property="og:title"', 'name="twitter:card"', 'type="application/ld+json"']) {
+  const robotsMeta = process.env.PREVIEW_BUILD === "1"
+    ? 'name="robots" content="noindex,nofollow"'
+    : 'name="robots" content="index,follow"';
+  for (const required of ['rel="canonical"', robotsMeta, 'property="og:title"', 'name="twitter:card"', 'type="application/ld+json"']) {
     if (!html.includes(required)) errors.push(`${url}: missing ${required}`);
   }
 

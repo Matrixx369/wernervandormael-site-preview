@@ -29,6 +29,9 @@ async function validate() {
   for (const route of routes) {
     const html = await fetchText(route);
     pages.set(route, html);
+    if (!html.includes('<meta name="robots" content="noindex,nofollow">')) {
+      errors.push(`${route}: preview robots meta must be noindex,nofollow`);
+    }
     for (const oldString of oldTemplateStrings) {
       if (html.includes(oldString)) errors.push(`${route}: old template output remains: ${oldString}`);
     }
@@ -72,6 +75,10 @@ async function validate() {
 
   const projects = await fetch(new URL(`projecten/?validation=${Date.now()}`, baseUrl), { cache: "no-store" });
   if (projects.status !== 404) errors.push(`/projecten/: expected HTTP 404, received ${projects.status}`);
+  const robots = await fetchText("robots.txt");
+  if (!/^User-agent: \*\r?\nDisallow: \/\r?\n?$/.test(robots)) {
+    errors.push("/robots.txt: preview crawling must be blocked with Disallow: /");
+  }
   if (errors.length) throw new Error(errors.join("\n"));
 }
 

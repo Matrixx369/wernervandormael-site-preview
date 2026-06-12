@@ -208,7 +208,7 @@ function img(file, alt, cls = "", eager = false) {
 }
 
 function header() {
-  return `<header><nav class="nav container" aria-label="Hoofdnavigatie"><a class="brand" href="/" aria-label="Vandormael Werner home"><img src="/assets/images/vandormael-werner-logo.svg" alt="Vandormael Werner Dakwerken en Klussen" width="390" height="155"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button><div class="menu" id="main-menu"><a href="/">Dakwerken</a><details><summary>Diensten</summary><div class="dropdown">${services.map(s => `<a href="${s[1]}">${s[0]}</a>`).join("")}</div></details><a href="/over-vandormael-werner/">Over</a><a href="/contact/">Contact</a></div><a class="btn btn-red nav-call" href="tel:${phone}">Bel Werner</a></nav></header>`;
+  return `<header><nav class="nav container" aria-label="Hoofdnavigatie"><a class="brand" href="/" aria-label="Vandormael Werner home"><img src="/assets/images/vandormael-werner-logo.svg" alt="Vandormael Werner Dakwerken en Klussen" width="390" height="155"></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button><div class="menu" id="main-menu"><a href="/">Dakwerken</a><details><summary>Diensten</summary><div class="dropdown">${services.map(s => `<a href="${s[1]}">${s[0]}</a>`).join("")}</div></details><a href="/over-vandormael-werner/">Over</a><a href="/contact/">Contact</a></div><a class="btn btn-red nav-call" href="tel:${phone}"><small>Bel Werner</small><strong>${phoneDisplay}</strong></a></nav></header>`;
 }
 
 function footer() {

@@ -1,20 +1,25 @@
 # Technical Preview Status
 
-Status date: 10 June 2026
+Status date: 12 June 2026
 
-This branch remains a technical SEO/GEO review state. The premium service-page
-layout is approved across all seven service pages. These pages are considered
-frozen for the current preview state. The homepage, contact page and over page
-are not yet fully harmonized with that premium service-page style.
+Final preview QA status: **PASS**. The seven service pages, homepage, Over
+Werner page and Contact page are harmonized and approved for the current
+preview state. The seven service pages are considered frozen unless a clear
+bug, factual issue, image mismatch, mobile issue, SEO issue or validation issue
+is identified.
 
 ## Preview
 
 - Branch: `preview/wernervandormael-site`
-- Review URL: `https://matrixx369.github.io/wernervandormael-site-preview/`
+- Review URL:
+  `https://matrixx369.github.io/wernervandormael-site-preview/?v=1d3b6d8`
+- Latest preview indexing commit:
+  `1d3b6d82e63ad71641707cd42ee2902936e8ef6b`
 - Approved visual reference for the later design round:
   `https://matrixx369.github.io/wernermockup/`
-- The GitHub Pages artifact is marked `noindex,nofollow` and its preview
-  `robots.txt` blocks crawling.
+- All 12 GitHub Pages preview HTML pages use `noindex,nofollow`.
+- Preview `robots.txt` blocks crawling with:
+  `User-agent: *` and `Disallow: /`.
 - Nothing in this branch deploys to `https://wernervandormael.be`.
 - Production deployment is not approved.
 - Do not merge this branch to `main` or `master` yet.
@@ -35,7 +40,8 @@ are not yet fully harmonized with that premium service-page style.
 - `/algemene-voorwaarden/`
 
 The site currently generates 12 public pages and `sitemap.xml` contains 12
-URLs. The Projecten page remains removed and must continue to return 404. A
+URLs. All 12 preview pages return HTTP 200. The Projecten page remains removed
+and must continue to return HTTP 404. A
 homepage project or recent-work visual section may remain present, but there is
 no separate Projecten page. Existing images remain preserved for possible later
 project or gallery use.
@@ -82,13 +88,11 @@ or mobile issue is identified.
 
 ## Known Issues And Deferred Work
 
-- The premium service-page visual direction is approved as the current model
-  across all seven service pages. These pages are frozen for the current
-  preview state.
-- The homepage, contact page and over page are not yet fully harmonized with
-  the premium service-page style.
-- The practical-section image review across all seven service pages is
-  complete.
+- Final QA passed with no critical blockers.
+- All seven service pages are approved and frozen for the current preview.
+- The homepage, Over Werner page and Contact page are harmonized.
+- The practical-section image review is complete.
+- Legal pages are present.
 - The Projecten page remains removed and must stay unavailable. A homepage
   project or recent-work visual section may remain present without a separate
   Projecten page.
@@ -96,17 +100,17 @@ or mobile issue is identified.
   delivery backend.
 - Production hosting redirects for non-`/limburg/` legacy service URLs still
   need to be configured when a real deployment is approved.
-- Production launch checks, Search Console submission and real-domain
-  verification are intentionally deferred.
+- Final production robots and canonicals must be checked during deployment.
+- Search Console submission and real-domain verification are deferred until
+  production launch.
+- Production deployment remains unapproved.
 
-## Later Design Round
+## Production Separation
 
-Use the approved premium service-page pattern as the current model when
-harmonizing the homepage, contact page and over page. Avoid further
-micro-polishing of the approved service pages unless a clear issue is found.
-Compare desktop and mobile screenshots before approving any production
-deployment. Preserve the current URLs, service-page content, metadata, schema,
-internal links, images and legal pages.
+The indexing-protection commit made no visual or content changes. The
+production generator, production canonicals, sitemap and schema remain
+unchanged. Nothing has been deployed to `https://wernervandormael.be`, and this
+preview branch remains unmerged to `main` or `master`.
 
 ## Premium Service-Page Pattern
 
